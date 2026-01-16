@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Test and improve your reading speed with comprehension tracking. RSVP and scrolling reading modes with detailed statistics.">
+    <meta name="description"
+        content="Test and improve your reading speed with comprehension tracking. RSVP and scrolling reading modes with detailed statistics.">
     <title>Reading Speed Tester | Improve Your Reading</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -52,7 +57,7 @@
                     <p class="hero-subtitle">Reading Comprehension Trainer</p>
                     <h1 class="hero-title">Speed<span class="text-primary">Reader</span></h1>
                     <p class="hero-description">
-                        Train your reading speed while maintaining comprehension. 
+                        Train your reading speed while maintaining comprehension.
                         Choose from curated passages, test yourself, and track your progress.
                     </p>
                     <div class="hero-actions">
@@ -89,7 +94,8 @@
                         <div class="mode-card" data-mode="rsvp">
                             <div class="mode-card-icon">⚡</div>
                             <h3 class="mode-card-title">RSVP Mode</h3>
-                            <p class="mode-card-desc">Rapid Serial Visual Presentation. One word at a time for maximum focus and speed.</p>
+                            <p class="mode-card-desc">Rapid Serial Visual Presentation. One word at a time for maximum
+                                focus and speed.</p>
                             <div class="mode-card-features">
                                 <span class="feature-tag">Focus Letter</span>
                                 <span class="feature-tag">Auto-Pause</span>
@@ -98,7 +104,8 @@
                         <div class="mode-card" data-mode="scroll">
                             <div class="mode-card-icon">📜</div>
                             <h3 class="mode-card-title">Scroll Mode</h3>
-                            <p class="mode-card-desc">See words in context. Current word highlighted as text scrolls smoothly.</p>
+                            <p class="mode-card-desc">See words in context. Current word highlighted as text scrolls
+                                smoothly.</p>
                             <div class="mode-card-features">
                                 <span class="feature-tag">Context View</span>
                                 <span class="feature-tag">Smooth Scroll</span>
@@ -117,6 +124,12 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Footer Credit -->
+                <footer class="site-footer">
+                    <p>Made with 💜 by <a href="https://www.linkedin.com/in/bob-z-946024b8/" target="_blank"
+                            rel="noopener noreferrer">Bob Zhu</a></p>
+                </footer>
             </div>
         </section>
 
@@ -127,6 +140,7 @@
                     <h1 class="page-title">Passage Library</h1>
                     <div class="library-filters">
                         <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="fiction">Fiction</button>
                         <button class="filter-btn" data-category="science">Science</button>
                         <button class="filter-btn" data-category="history">History</button>
                         <button class="filter-btn" data-category="literature">Literature</button>
@@ -144,7 +158,7 @@
         <section class="view" id="view-stats">
             <div class="container">
                 <h1 class="page-title">Your Statistics</h1>
-                
+
                 <div class="stats-overview">
                     <div class="stat-card stat-card-primary">
                         <span class="stat-card-icon">⚡</span>
@@ -259,7 +273,8 @@
                 </div>
                 <div class="speed-slider-container">
                     <span class="speed-label">100</span>
-                    <input type="range" class="speed-slider" id="speed-slider" min="100" max="1000" value="300" step="25">
+                    <input type="range" class="speed-slider" id="speed-slider" min="100" max="1000" value="300"
+                        step="25">
                     <span class="speed-label">1000</span>
                 </div>
                 <div class="mode-toggle">
@@ -278,7 +293,7 @@
                         <span id="quiz-current">1</span> / <span id="quiz-total">20</span>
                     </div>
                 </div>
-                
+
                 <div class="quiz-content">
                     <div class="question-card" id="question-card">
                         <p class="question-text" id="question-text">Loading question...</p>
@@ -306,7 +321,7 @@
                     <span class="results-icon">🎉</span>
                     <h1 class="results-title">Session Complete!</h1>
                 </div>
-                
+
                 <div class="results-stats">
                     <div class="result-stat result-stat-primary">
                         <span class="result-stat-value" id="result-wpm">--</span>
@@ -373,4 +388,5 @@
     <script src="js/ui.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

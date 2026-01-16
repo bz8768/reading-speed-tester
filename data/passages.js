@@ -612,6 +612,162 @@ Though historians debate the Renaissance's precise boundaries and impact, its le
                 { id: "hist_006_q7", type: "multiple_choice", question: "When was the printing press invented?", options: ["Around 1340", "Around 1440", "Around 1540", "Around 1640"], answer: 1, explanation: "The passage states 'invented by Johannes Gutenberg around 1440.'" },
                 { id: "hist_006_q8", type: "multiple_choice", question: "What philosophy emphasized human potential?", options: ["Scholasticism", "Humanism", "Rationalism", "Empiricism"], answer: 1, explanation: "The passage describes 'a philosophy called humanism' about 'human potential and achievement.'" }
             ]
+        },
+
+        // ============================================
+        // FICTION CATEGORY - Creative Stories
+        // ============================================
+        {
+            id: "fic_001",
+            category: "fiction",
+            title: "The Lighthouse Keeper's Secret",
+            wordCount: 248,
+            difficulty: "medium",
+            text: `Martha had kept the lighthouse for thirty-seven years, but tonight was different. The storm outside howled like something alive, and for the first time, someone had come knocking. A young woman stood at the door, soaked through, clutching a leather journal to her chest.
+
+"My grandmother left me this," she said, stepping inside without invitation. "She wrote about a lighthouse keeper named Martha who saved her life in 1962."
+
+Martha's hands trembled as she poured tea. She remembered that night—the shipwreck, the girl she'd pulled from the waves, the promise she'd made to keep a secret. The secret about what really lived in the waters below the cliff.
+
+"I need to know what she saw," the young woman continued. "She had nightmares until the day she died. Dreams of something beneath the water with too many eyes."
+
+Martha looked toward the window. The beam swept across the churning sea, and for just a moment, something impossibly large broke the surface. Tentacles, perhaps. Or something worse.
+
+"Some secrets protect us," Martha finally said. "Your grandmother survived because she learned when not to look. The light isn't meant to guide ships inland—it's meant to keep something from coming ashore."
+
+The young woman's face paled. Outside, something scratched against the lighthouse door. Martha calmly reached for the ancient harpoon mounted above the fireplace. It was going to be a long night.`,
+            questions: [
+                { id: "fic_001_q1", type: "yes_no", question: "Had Martha kept the lighthouse for twenty-seven years?", answer: false, explanation: "The passage states 'thirty-seven years,' not twenty-seven." },
+                { id: "fic_001_q2", type: "yes_no", question: "Was the young woman clutching a leather journal?", answer: true, explanation: "The passage says she was 'clutching a leather journal to her chest.'" },
+                { id: "fic_001_q3", type: "yes_no", question: "Did the shipwreck happen in 1972?", answer: false, explanation: "The passage mentions 'the girl she'd pulled from the waves' in '1962.'" },
+                { id: "fic_001_q4", type: "yes_no", question: "Did the grandmother have nightmares until she died?", answer: true, explanation: "The passage states 'She had nightmares until the day she died.'" },
+                { id: "fic_001_q5", type: "multiple_choice", question: "What was mounted above the fireplace?", options: ["A sword", "A photograph", "A harpoon", "A lantern"], answer: 2, explanation: "The passage mentions 'the ancient harpoon mounted above the fireplace.'" },
+                { id: "fic_001_q6", type: "multiple_choice", question: "What was the young woman looking for?", options: ["Money", "A map", "What her grandmother saw", "The lighthouse keeper"], answer: 2, explanation: "She said 'I need to know what she saw.'" },
+                { id: "fic_001_q7", type: "multiple_choice", question: "What did Martha say the light was meant to do?", options: ["Guide ships", "Keep something from coming ashore", "Signal for help", "Warm the building"], answer: 1, explanation: "Martha said 'it's meant to keep something from coming ashore.'" },
+                { id: "fic_001_q8", type: "multiple_choice", question: "What broke the surface of the sea?", options: ["A whale", "A ship", "Something with tentacles", "Dolphins"], answer: 2, explanation: "The passage describes 'something impossibly large' with 'Tentacles, perhaps.'" }
+            ]
+        },
+        {
+            id: "fic_002",
+            category: "fiction",
+            title: "The Last Letter",
+            wordCount: 235,
+            difficulty: "easy",
+            text: `James found the letter wedged between the floorboards of his new apartment. The paper was yellowed, dated November 12, 1943. He shouldn't have read it, but curiosity won.
+
+"My dearest Eleanor," it began. "If you're reading this, I didn't make it home from the war. There's something I never told you—the violin in the attic isn't just an instrument. My grandfather was a craftsman in Vienna, and before he fled, he hid something inside. Something that powerful men would kill for."
+
+James looked up at the ceiling. His apartment had an attic. His heart raced as he climbed the dusty ladder and found, behind stacks of newspapers from decades past, a black violin case.
+
+Inside was the most beautiful violin he'd ever seen, its wood glowing amber in the dim light. And there, tucked into the velvet lining, was a folded paper—a map with coordinates and a single word written in German: "Bernstein."
+
+James didn't speak German, but he recognized that word. Amber. And he knew enough history to understand what this might mean. The Amber Room, stolen by Nazis in 1941, had never been found. Worth over half a billion dollars, it had vanished completely.
+
+He carefully replaced the violin and closed the case. Then he took out his phone and searched for the cheapest flights to Vienna. Some letters were meant to be answered, even eighty years later.`,
+            questions: [
+                { id: "fic_002_q1", type: "yes_no", question: "Was the letter dated November 12, 1953?", answer: false, explanation: "The passage states it was dated 'November 12, 1943.'" },
+                { id: "fic_002_q2", type: "yes_no", question: "Did James find the letter between floorboards?", answer: true, explanation: "The passage says 'the letter wedged between the floorboards.'" },
+                { id: "fic_002_q3", type: "yes_no", question: "Was the grandfather from Paris?", answer: false, explanation: "The passage says 'My grandfather was a craftsman in Vienna.'" },
+                { id: "fic_002_q4", type: "yes_no", question: "Had the Amber Room been found?", answer: false, explanation: "The passage states it 'had never been found.'" },
+                { id: "fic_002_q5", type: "multiple_choice", question: "What was hidden in the attic?", options: ["A painting", "A violin", "A chest", "A diary"], answer: 1, explanation: "James found 'a black violin case' in the attic." },
+                { id: "fic_002_q6", type: "multiple_choice", question: "What does 'Bernstein' mean in German?", options: ["Gold", "Silver", "Amber", "Diamond"], answer: 2, explanation: "The passage explains 'James didn't speak German, but he recognized that word. Amber.'" },
+                { id: "fic_002_q7", type: "multiple_choice", question: "How much was the Amber Room worth?", options: ["50 million", "100 million", "Over 500 million", "1 billion"], answer: 2, explanation: "The passage states 'Worth over half a billion dollars.'" },
+                { id: "fic_002_q8", type: "multiple_choice", question: "Where did James plan to fly?", options: ["Berlin", "Paris", "Vienna", "London"], answer: 2, explanation: "James 'searched for the cheapest flights to Vienna.'" }
+            ]
+        },
+        {
+            id: "fic_003",
+            category: "fiction",
+            title: "The Memory Thief",
+            wordCount: 252,
+            difficulty: "hard",
+            text: `Dr. Vera Chen had invented the impossible: a device that could extract memories like pulling threads from fabric. The military wanted it for interrogations. Corporations wanted it for industrial espionage. But Vera had built it for one reason only—her daughter.
+
+Sophie had been in a coma for fourteen months. The doctors said her brain was active, trapped in some internal loop. Vera believed she could reach her, pull out whatever nightmare held Sophie captive, and bring her home.
+
+The extraction began at midnight. Vera watched the monitor as images flickered—fragmentary, disjointed. A birthday party. A red bicycle. Then darker things. A car crash. Rain on a windshield. Headlights approaching too fast. Vera's own face, screaming.
+
+She hadn't known Sophie was awake that night. Hadn't known she'd witnessed the accident that killed her father. The guilt had locked her mind away.
+
+Tears streaming, Vera made a choice. She reversed the polarity—not to extract, but to implant. She pushed into Sophie's mind a new memory: a different ending where the car missed them, where her father survived. A beautiful lie.
+
+Sophie's eyes opened. She smiled at her mother, remembering nothing of the crash.
+
+"Where's Dad?" she asked.
+
+Vera felt something inside her break. She had saved her daughter by taking on the burden herself. Now only she would remember the truth—and the weight of playing God with a child's mind.`,
+            questions: [
+                { id: "fic_003_q1", type: "yes_no", question: "Could Vera's device implant memories?", answer: true, explanation: "The passage shows she 'reversed the polarity—not to extract, but to implant.'" },
+                { id: "fic_003_q2", type: "yes_no", question: "Had Sophie been in a coma for twelve months?", answer: false, explanation: "The passage states 'fourteen months,' not twelve." },
+                { id: "fic_003_q3", type: "yes_no", question: "Did Sophie witness her mother's death?", answer: false, explanation: "She witnessed 'the accident that killed her father,' not her mother." },
+                { id: "fic_003_q4", type: "yes_no", question: "Did the extraction begin at midnight?", answer: true, explanation: "The passage states 'The extraction began at midnight.'" },
+                { id: "fic_003_q5", type: "multiple_choice", question: "What did Dr. Chen invent?", options: ["A time machine", "A memory extraction device", "A teleporter", "A mind-reading helmet"], answer: 1, explanation: "She invented 'a device that could extract memories.'" },
+                { id: "fic_003_q6", type: "multiple_choice", question: "What memory appeared of Sophie's childhood?", options: ["A blue scooter", "A red bicycle", "A green skateboard", "A yellow wagon"], answer: 1, explanation: "The memories included 'A red bicycle.'" },
+                { id: "fic_003_q7", type: "multiple_choice", question: "What did Vera implant in Sophie's mind?", options: ["The truth", "A memory where her father survived", "Her own memories", "Happy dreams"], answer: 1, explanation: "She implanted 'a different ending where the car missed them, where her father survived.'" },
+                { id: "fic_003_q8", type: "multiple_choice", question: "What was the first thing Sophie asked?", options: ["Where am I?", "What happened?", "Where's Dad?", "Who are you?"], answer: 2, explanation: "Sophie asked 'Where's Dad?'" }
+            ]
+        },
+        {
+            id: "fic_004",
+            category: "fiction",
+            title: "The Clockmaker's Apprentice",
+            wordCount: 241,
+            difficulty: "medium",
+            text: `In a crooked shop on Pendulum Street, young Thomas learned that time wasn't what people thought it was. His master, the ancient clockmaker Aldous Gray, had shown him the truth: every clock in the shop contained a fragment of stolen time—moments taken from people who would never miss them.
+
+"The boring moments," Aldous explained, adjusting his silver spectacles. "The waiting rooms. The traffic jams. The hours lost to sleep. I collect them, compress them, and sell them to those who need more time."
+
+Thomas wound the grandfather clock in the corner, feeling its strange warmth. "Who buys time?"
+
+"Artists approaching deadlines. Parents with dying children. Lovers separated by war. Anyone desperate enough to pay my price." Aldous smiled, but his eyes were sad. "The problem, Thomas, is that borrowed time always runs out. And when it does, the debt comes due."
+
+That night, a woman appeared at the shop door. She was elegant but haggard, rings under her eyes. "I've come to return what I borrowed," she said, placing a small hourglass on the counter. "Twenty years ago, you gave my husband six more months to live."
+
+Thomas watched as she aged before his eyes, decades passing in seconds. When it was over, only dust remained where she had stood.
+
+"Remember this," Aldous whispered to his horrified apprentice. "We don't create time, boy. We only move it around. And nature always demands balance."`,
+            questions: [
+                { id: "fic_004_q1", type: "yes_no", question: "Was the shop located on Pendulum Street?", answer: true, explanation: "The passage states 'a crooked shop on Pendulum Street.'" },
+                { id: "fic_004_q2", type: "yes_no", question: "Did Aldous wear gold spectacles?", answer: false, explanation: "The passage says 'his silver spectacles,' not gold." },
+                { id: "fic_004_q3", type: "yes_no", question: "Did the woman borrow time thirty years ago?", answer: false, explanation: "She said 'Twenty years ago,' not thirty." },
+                { id: "fic_004_q4", type: "yes_no", question: "Did the clockmaker collect boring moments?", answer: true, explanation: "Aldous explained he collected 'The boring moments. The waiting rooms. The traffic jams.'" },
+                { id: "fic_004_q5", type: "multiple_choice", question: "What did each clock contain?", options: ["A spirit", "A fragment of stolen time", "A secret message", "A tiny world"], answer: 1, explanation: "Every clock 'contained a fragment of stolen time.'" },
+                { id: "fic_004_q6", type: "multiple_choice", question: "How much extra time did the woman's husband receive?", options: ["Three months", "Six months", "One year", "Five years"], answer: 1, explanation: "She said 'you gave my husband six more months to live.'" },
+                { id: "fic_004_q7", type: "multiple_choice", question: "What was the apprentice's name?", options: ["James", "William", "Thomas", "Henry"], answer: 2, explanation: "The passage introduces 'young Thomas.'" },
+                { id: "fic_004_q8", type: "multiple_choice", question: "What remained after the woman repaid her debt?", options: ["Bones", "Ashes", "Dust", "Nothing"], answer: 2, explanation: "The passage says 'only dust remained where she had stood.'" }
+            ]
+        },
+        {
+            id: "fic_005",
+            category: "fiction",
+            title: "The Garden Between Worlds",
+            wordCount: 239,
+            difficulty: "easy",
+            text: `Maya discovered the garden on her seventh birthday, hidden behind the ivy-covered wall at the end of her grandmother's property. It shouldn't have existed—the wall backed onto a busy highway—yet here was a meadow of impossible flowers that glowed with their own light.
+
+A fox with silver fur sat watching her from beneath a tree that bore both apples and stars. "You found us," it said, and Maya wasn't even surprised that it spoke. In this place, everything felt natural.
+
+"What is this?" she asked.
+
+"The garden between worlds. Where things go when they're forgotten but still loved. Where lost toys wait hoping to be remembered. Where imaginary friends live when children grow up."
+
+Maya saw them then—teddy bears with faded button eyes, dolls in outdated dresses, and creatures made entirely of a child's imagination. They waved at her, delighted to have a visitor.
+
+"Can I stay?" Maya asked.
+
+The fox shook its head. "The garden needs caretakers, not residents. Come when the world feels too heavy. Bring the things people have forgotten they need—wonder, and kindness, and stories. Keep the garden alive between your visits."
+
+Maya returned many times over the years, always through the ivy-covered wall. Even as an adult, she never forgot the way. She became the garden's keeper, and in return, the garden kept the child inside her alive.`,
+            questions: [
+                { id: "fic_005_q1", type: "yes_no", question: "Did Maya discover the garden on her eighth birthday?", answer: false, explanation: "The passage states 'her seventh birthday,' not eighth." },
+                { id: "fic_005_q2", type: "yes_no", question: "Did the wall back onto a busy highway?", answer: true, explanation: "The passage says 'the wall backed onto a busy highway.'" },
+                { id: "fic_005_q3", type: "yes_no", question: "Was the fox's fur golden?", answer: false, explanation: "The passage describes 'A fox with silver fur,' not golden." },
+                { id: "fic_005_q4", type: "yes_no", question: "Could the fox speak?", answer: true, explanation: "The passage shows the fox speaking: 'You found us,' it said." },
+                { id: "fic_005_q5", type: "multiple_choice", question: "What did the tree bear?", options: ["Oranges and moons", "Apples and stars", "Pears and clouds", "Peaches and suns"], answer: 1, explanation: "The passage describes 'a tree that bore both apples and stars.'" },
+                { id: "fic_005_q6", type: "multiple_choice", question: "Who lived in the garden?", options: ["Fairies", "Lost toys and imaginary friends", "Ghosts", "Angels"], answer: 1, explanation: "The garden was 'Where lost toys wait' and 'Where imaginary friends live.'" },
+                { id: "fic_005_q7", type: "multiple_choice", question: "What was Maya asked to bring to the garden?", options: ["Flowers", "Wonder, kindness, and stories", "Magic spells", "New toys"], answer: 1, explanation: "The fox said 'Bring the things people have forgotten they need—wonder, and kindness, and stories.'" },
+                { id: "fic_005_q8", type: "multiple_choice", question: "What did the garden keep alive in Maya?", options: ["Her memories", "The child inside her", "Her powers", "Her youth"], answer: 1, explanation: "The passage says 'the garden kept the child inside her alive.'" }
+            ]
         }
     ],
 

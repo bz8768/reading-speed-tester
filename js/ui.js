@@ -73,12 +73,20 @@ const UI = {
     // Show a view (hide others)
     showView(viewName) {
         const views = ['home', 'library', 'stats', 'reading', 'quiz', 'results'];
+
+        // First, remove active from ALL views
         views.forEach(v => {
             const el = this.elements[`${v}View`];
             if (el) {
-                el.classList.toggle('active', v === viewName);
+                el.classList.remove('active');
             }
         });
+
+        // Then add active to the target view
+        const targetEl = this.elements[`${viewName}View`];
+        if (targetEl) {
+            targetEl.classList.add('active');
+        }
 
         // Update nav buttons
         document.querySelectorAll('.nav-btn').forEach(btn => {
