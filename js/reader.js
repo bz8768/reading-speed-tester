@@ -22,7 +22,11 @@ const Reader = {
     // Initialize with text
     init(text) {
         // Split text into words, preserving punctuation
-        this.words = text.split(/\s+/).filter(w => w.length > 0);
+        // Also split on em dashes (—) to separate words like "nothing—not"
+        this.words = text
+            .replace(/—/g, '— ')  // Add space after em dashes so they stay with preceding word
+            .split(/\s+/)
+            .filter(w => w.length > 0);
         this.currentIndex = 0;
         this.isPlaying = false;
         this.startTime = null;
