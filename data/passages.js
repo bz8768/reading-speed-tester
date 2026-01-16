@@ -966,6 +966,190 @@ Elara looked back at her ship, then at the silver trees. She thought about it fo
                 { id: "fic_010_q7", type: "multiple_choice", question: "What was the island called?", options: ["Paradise", "Nowhere", "Atlantis", "The End"], answer: 1, explanation: "The woman said 'Welcome to Nowhere.'" },
                 { id: "fic_010_q8", type: "multiple_choice", question: "What did Elara ask for at the end?", options: ["Rest", "Food", "The map", "A new ship"], answer: 2, explanation: "Elara said 'Give me the map.'" }
             ]
+        },
+        {
+            id: "fic_011",
+            category: "fiction",
+            title: "The Ghost Who Paid Rent",
+            wordCount: 237,
+            difficulty: "easy",
+            text: `When Sarah moved into the old Victorian house, the landlord mentioned it might be haunted. He failed to mention the ghost would be the best roommate she'd ever had.
+
+His name was Harold. He'd died in 1952 after falling down the stairs while chasing the family cat. He was embarrassed about it. "Not exactly a dramatic demise," he admitted, flickering slightly near the refrigerator.
+
+Harold couldn't touch physical objects, but he was excellent company. He'd watch Sarah's favorite shows with her, offering commentary on how much things had changed. "In my day, a television was furniture," he marveled. "Now it's thinner than my grandmother's china."
+
+He also scared off her terrible ex-boyfriend by appearing in the bathroom mirror at three in the morning. Ryan never came back.
+
+"I feel bad not contributing," Harold said one evening. "I've been here seventy years paying nothing."
+
+"You keep me company. That's enough."
+
+But Harold insisted. He started whispering winning lottery numbers he'd somehow learned from other ghosts. Sarah won moderately but consistently—enough to pay off her student loans within a year.
+
+"How do you even know these things?" she asked.
+
+"Death," Harold explained, "comes with excellent networking opportunities."
+
+Sarah stayed in that house for thirty-two years. When she finally passed, peacefully in her sleep, Harold was waiting. "Took you long enough," he said, smiling. "We have so much to catch up on."`,
+            questions: [
+                { id: "fic_011_q1", type: "yes_no", question: "Did Harold die in 1962?", answer: false, explanation: "The passage states 'He'd died in 1952,' not 1962." },
+                { id: "fic_011_q2", type: "yes_no", question: "Did Harold die by falling down stairs?", answer: true, explanation: "The passage says he 'died... after falling down the stairs.'" },
+                { id: "fic_011_q3", type: "yes_no", question: "Could Harold touch physical objects?", answer: false, explanation: "The passage states 'Harold couldn't touch physical objects.'" },
+                { id: "fic_011_q4", type: "yes_no", question: "Did Sarah stay in the house for twenty-two years?", answer: false, explanation: "The passage says 'thirty-two years,' not twenty-two." },
+                { id: "fic_011_q5", type: "multiple_choice", question: "Why was Harold chasing when he fell?", options: ["A burglar", "The family cat", "His wife", "A mouse"], answer: 1, explanation: "He fell 'while chasing the family cat.'" },
+                { id: "fic_011_q6", type: "multiple_choice", question: "How did Harold scare off Sarah's ex?", options: ["Making noises", "Appearing in the mirror", "Moving furniture", "Whispering"], answer: 1, explanation: "He scared him 'by appearing in the bathroom mirror.'" },
+                { id: "fic_011_q7", type: "multiple_choice", question: "What did Harold give Sarah?", options: ["Stock tips", "Lottery numbers", "Real estate advice", "Recipe ideas"], answer: 1, explanation: "He 'started whispering winning lottery numbers.'" },
+                { id: "fic_011_q8", type: "multiple_choice", question: "What did Sarah pay off with her winnings?", options: ["Her mortgage", "Credit cards", "Student loans", "Car payments"], answer: 2, explanation: "She paid off 'her student loans within a year.'" }
+            ]
+        },
+        {
+            id: "fic_012",
+            category: "fiction",
+            title: "The Museum Heist",
+            wordCount: 249,
+            difficulty: "hard",
+            text: `The plan was simple: steal the Vermeer during the gala, replace it with a forgery, and disappear before anyone noticed. What Lucia hadn't planned for was falling in love with the museum's head of security.
+
+"You're here every night," Marco observed during their third accidental encounter in the sculpture garden. "Most donors visit once a year."
+
+"I appreciate art slowly," she said, which was technically true. She'd spent weeks studying the security systems, the guard rotations, the weight sensors beneath each masterpiece.
+
+The night of the heist, everything went wrong. Her partner got food poisoning. The forger delivered a painting with the wrong dimensions. The museum unexpectedly installed new motion detectors that morning.
+
+Lucia stood in the darkened gallery, staring at the Vermeer—a woman reading a letter, frozen in morning light—and made a decision.
+
+She walked to the security office and knocked.
+
+"There's going to be a robbery tonight," she told a shocked Marco. "I was supposed to steal the Vermeer. But I've decided I'd rather have dinner with you instead."
+
+The police arrested her associates. Lucia spent eight months in minimum security for conspiracy. When she got out, Marco was waiting with coffee and a question.
+
+"Was any of it real?"
+
+"The only thing I ever lied about," she said, "was why I kept coming back."
+
+They got married in the museum garden. The Vermeer, still in its rightful place, seemed to glow a little brighter during the ceremony.`,
+            questions: [
+                { id: "fic_012_q1", type: "yes_no", question: "Was Lucia trying to steal a Picasso?", answer: false, explanation: "The passage says 'steal the Vermeer,' not a Picasso." },
+                { id: "fic_012_q2", type: "yes_no", question: "Was Marco the head of security?", answer: true, explanation: "The passage describes him as 'the museum's head of security.'" },
+                { id: "fic_012_q3", type: "yes_no", question: "Did the heist go according to plan?", answer: false, explanation: "The passage states 'The night of the heist, everything went wrong.'" },
+                { id: "fic_012_q4", type: "yes_no", question: "Did Lucia spend a year in prison?", answer: false, explanation: "She 'spent eight months in minimum security,' not a year." },
+                { id: "fic_012_q5", type: "multiple_choice", question: "Where did they keep meeting accidentally?", options: ["The cafe", "The sculpture garden", "The gift shop", "The lobby"], answer: 1, explanation: "They had 'accidental encounter in the sculpture garden.'" },
+                { id: "fic_012_q6", type: "multiple_choice", question: "What happened to Lucia's partner?", options: ["Got arrested", "Got food poisoning", "Backed out", "Was late"], answer: 1, explanation: "Her partner 'got food poisoning.'" },
+                { id: "fic_012_q7", type: "multiple_choice", question: "What was wrong with the forgery?", options: ["Wrong colors", "Wrong dimensions", "Wrong signature", "Wrong frame"], answer: 1, explanation: "The forger delivered 'a painting with the wrong dimensions.'" },
+                { id: "fic_012_q8", type: "multiple_choice", question: "Where did they get married?", options: ["A church", "The beach", "The museum garden", "City hall"], answer: 2, explanation: "They 'got married in the museum garden.'" }
+            ]
+        },
+        {
+            id: "fic_013",
+            category: "fiction",
+            title: "The Last Transmission",
+            wordCount: 244,
+            difficulty: "medium",
+            text: `Commander Wei had been alone on the Mars station for 847 days when the radio finally crackled back to life. Earth had gone silent two years ago, after the asteroid impact. She'd assumed everyone was dead.
+
+"This is New Auckland," the voice said, crackling through static. "Is anyone receiving?"
+
+Wei dropped her coffee cup. It floated in the low gravity, spinning slowly, as she scrambled for the microphone. "This is Mars Station Alpha. I'm receiving. How many survivors?"
+
+The pause lasted forever. "We have twelve thousand here. There are other settlements. We've been rebuilding. Commander Wei... we thought we lost you."
+
+She laughed—a strange, rusty sound she hadn't made in years. "I thought I lost everyone."
+
+Communication was difficult. The new satellite network was primitive, allowing only brief transmissions at specific times. But over the following weeks, Wei learned the truth: humanity had survived. Battered, scattered, but alive.
+
+"We're sending a ship," New Auckland finally announced. "It will take eighteen months to reach you."
+
+Wei looked around her tiny station. The tomato plants she'd somehow kept alive. The walls covered in drawings made during the long silence. The journal with 847 entries that began "Day one alone" and slowly transformed into something like hope.
+
+"I'll be here," she promised. "I'll leave a light on."
+
+She planted more tomatoes that night. Enough for two, this time. Maybe more. Earth was coming back, and Mars would be ready.`,
+            questions: [
+                { id: "fic_013_q1", type: "yes_no", question: "Had Wei been alone for over 900 days?", answer: false, explanation: "The passage states '847 days,' which is less than 900." },
+                { id: "fic_013_q2", type: "yes_no", question: "Was the message from New Auckland?", answer: true, explanation: "The voice said 'This is New Auckland.'" },
+                { id: "fic_013_q3", type: "yes_no", question: "Had Earth gone silent due to a nuclear war?", answer: false, explanation: "It was 'after the asteroid impact,' not nuclear war." },
+                { id: "fic_013_q4", type: "yes_no", question: "Did Wei have tomato plants in the station?", answer: true, explanation: "She had 'The tomato plants she'd somehow kept alive.'" },
+                { id: "fic_013_q5", type: "multiple_choice", question: "How many survivors were in New Auckland?", options: ["Two thousand", "Eight thousand", "Twelve thousand", "Twenty thousand"], answer: 2, explanation: "They reported 'twelve thousand here.'" },
+                { id: "fic_013_q6", type: "multiple_choice", question: "How long would the rescue ship take?", options: ["Six months", "Twelve months", "Eighteen months", "Twenty-four months"], answer: 2, explanation: "The ship would 'take eighteen months to reach you.'" },
+                { id: "fic_013_q7", type: "multiple_choice", question: "What was on Wei's walls?", options: ["Maps", "Photos", "Drawings", "Equations"], answer: 2, explanation: "The walls were 'covered in drawings made during the long silence.'" },
+                { id: "fic_013_q8", type: "multiple_choice", question: "What did Wei's journal entries begin with?", options: ["Dear diary", "Day one alone", "Mission log", "Help me"], answer: 1, explanation: "The journal entries 'began \"Day one alone.\"'" }
+            ]
+        },
+        {
+            id: "fic_014",
+            category: "fiction",
+            title: "The Secret Ingredient",
+            wordCount: 241,
+            difficulty: "easy",
+            text: `Chef Maria had won every cooking competition in the country except one: the Golden Ladle, judged by the legendary and terrifying Madame Fontaine, who hadn't awarded first place in fifteen years.
+
+"Your technique is flawless," Madame Fontaine would say. "But your food has no soul."
+
+Maria's competitors offered bribes, performed tricks, created elaborate presentations with smoke and fire. Nothing worked. Madame Fontaine remained unimpressed.
+
+The night before the finals, Maria visited her grandmother in the nursing home. Abuela couldn't remember her name anymore, but she remembered recipes.
+
+"Mija, the secret is simple," she whispered, pressing a wrinkled paper into Maria's hand. "Cook for someone you love. Everything else is decoration."
+
+The next day, Maria ignored her planned menu. Instead, she made her grandmother's chicken soup—the one that had cured every cold, healed every heartbreak, celebrated every triumph of her childhood.
+
+When Madame Fontaine tasted it, she set down her spoon and was silent for a long moment.
+
+"Who did you make this for?" she finally asked.
+
+"My grandmother. She's losing her memories, but not this one. Never this one."
+
+Madame Fontaine reached across the table and took Maria's hand. "That," she said quietly, "is the first meal anyone has cooked for me in forty years."
+
+Maria won the Golden Ladle. But what she remembered most was Madame Fontaine asking for the recipe—not to judge it, but to make it herself. For someone she had lost long ago.`,
+            questions: [
+                { id: "fic_014_q1", type: "yes_no", question: "Had Madame Fontaine awarded first place recently?", answer: false, explanation: "She 'hadn't awarded first place in fifteen years.'" },
+                { id: "fic_014_q2", type: "yes_no", question: "Did Maria's grandmother remember her name?", answer: false, explanation: "The passage says 'Abuela couldn't remember her name anymore.'" },
+                { id: "fic_014_q3", type: "yes_no", question: "Did Maria make her planned menu for the finals?", answer: false, explanation: "She 'ignored her planned menu' and made her grandmother's soup instead." },
+                { id: "fic_014_q4", type: "yes_no", question: "Did Maria win the competition?", answer: true, explanation: "The passage states 'Maria won the Golden Ladle.'" },
+                { id: "fic_014_q5", type: "multiple_choice", question: "What was the competition called?", options: ["The Silver Spoon", "The Golden Ladle", "The Iron Chef", "The Diamond Fork"], answer: 1, explanation: "The competition was called 'the Golden Ladle.'" },
+                { id: "fic_014_q6", type: "multiple_choice", question: "What did Maria's grandmother give her?", options: ["A spoon", "Money", "A wrinkled paper", "A photograph"], answer: 2, explanation: "She 'pressed a wrinkled paper into Maria's hand.'" },
+                { id: "fic_014_q7", type: "multiple_choice", question: "What dish did Maria make?", options: ["Paella", "Chicken soup", "Tacos", "Lasagna"], answer: 1, explanation: "She made 'her grandmother's chicken soup.'" },
+                { id: "fic_014_q8", type: "multiple_choice", question: "How long had it been since someone cooked for Madame Fontaine?", options: ["Ten years", "Twenty years", "Thirty years", "Forty years"], answer: 3, explanation: "She said it was 'the first meal anyone has cooked for me in forty years.'" }
+            ]
+        },
+        {
+            id: "fic_015",
+            category: "fiction",
+            title: "Tuesday Again",
+            wordCount: 248,
+            difficulty: "medium",
+            text: `Ben had lived this Tuesday four hundred and seventeen times. He'd memorized every traffic light, every conversation, every gust of wind. The universe, for reasons unknown, had trapped him in a twenty-four hour loop.
+
+He'd spent the first hundred iterations panicking. The next hundred seeking help. The hundred after that trying to break the loop through increasingly absurd methods: skydiving, confessing crimes he hadn't committed, eating nothing but pickles.
+
+Nothing worked.
+
+On iteration 418, he decided to simply be kind.
+
+He gave directions to the lost tourist at 8:47 AM. Complimented the barista's new haircut at 9:15. Returned the wallet that fell from the businessman's pocket at 11:30—something he'd ignored for four hundred days.
+
+He helped the elderly woman carry groceries at 2 PM. Stopped to play fetch with the lonely dog tied outside the pharmacy at 3:45. Told his mother he loved her at 6 PM, something he hadn't done in years.
+
+At 11:59 PM, as he waited for the reset, something different happened. The clock struck midnight and kept going. Tuesday became Wednesday.
+
+Ben stood in the dark, stunned. Then he laughed. Then he cried. Then he did both at once.
+
+The next morning, he woke to Wednesday's unfamiliar sunlight. He had no idea what would happen. Traffic lights were mysteries. Conversations were surprises. And every stranger was someone new to help.
+
+He'd escaped by finally learning what the loop had been teaching him all along.`,
+            questions: [
+                { id: "fic_015_q1", type: "yes_no", question: "Had Ben lived Tuesday over 500 times?", answer: false, explanation: "The passage states 'four hundred and seventeen times,' which is less than 500." },
+                { id: "fic_015_q2", type: "yes_no", question: "Did Ben try eating only pickles?", answer: true, explanation: "He tried 'eating nothing but pickles' to break the loop." },
+                { id: "fic_015_q3", type: "yes_no", question: "Did Tuesday finally become Thursday?", answer: false, explanation: "The passage says 'Tuesday became Wednesday,' not Thursday." },
+                { id: "fic_015_q4", type: "yes_no", question: "Did Ben return a lost wallet?", answer: true, explanation: "He 'Returned the wallet that fell from the businessman's pocket.'" },
+                { id: "fic_015_q5", type: "multiple_choice", question: "What did Ben do at 9:15 AM on day 418?", options: ["Had breakfast", "Complimented the barista", "Went to work", "Called his mother"], answer: 1, explanation: "He 'Complimented the barista's new haircut at 9:15.'" },
+                { id: "fic_015_q6", type: "multiple_choice", question: "What did Ben do with the dog at the pharmacy?", options: ["Fed it", "Adopted it", "Played fetch", "Pet it"], answer: 2, explanation: "He 'stopped to play fetch with the lonely dog.'" },
+                { id: "fic_015_q7", type: "multiple_choice", question: "What time did Ben tell his mother he loved her?", options: ["4 PM", "5 PM", "6 PM", "7 PM"], answer: 2, explanation: "He 'Told his mother he loved her at 6 PM.'" },
+                { id: "fic_015_q8", type: "multiple_choice", question: "What lesson did the loop teach Ben?", options: ["To be patient", "To be kind", "To be brave", "To be smart"], answer: 1, explanation: "He broke the loop after he 'decided to simply be kind.'" }
+            ]
         }
     ],
 
