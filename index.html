@@ -132,15 +132,71 @@
                 </footer>
 
                 <!-- ARTIN Education Brand Reveal -->
-                <div class="artin-reveal-section">
-                    <div class="artin-source-text">
-                        <span class="artin-highlight">ART</span>IFICIAL <span
-                            class="artin-highlight">IN</span>TELLIGENCE
+                <div class="artin-reveal-section" id="artin-animation">
+                    <div class="artin-words-container">
+                        <div class="artin-word">
+                            <span class="artin-core">ART</span><span class="artin-expand artin-expand-ificial"></span>
+                        </div>
+                        <div class="artin-word">
+                            <span class="artin-core">IN</span><span class="artin-expand artin-expand-telligence"></span>
+                        </div>
                     </div>
-                    <div class="artin-main-text">ARTIN</div>
                     <div class="artin-education-text">EDUCATION</div>
                     <p class="artin-tagline">Where Intelligence Meets Learning</p>
                 </div>
+
+                <script>
+                    // ARTIN to ARTIFICIAL INTELLIGENCE animation
+                    (function () {
+                        const observer = new IntersectionObserver((entries) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    startArtinAnimation();
+                                    observer.unobserve(entry.target);
+                                }
+                            });
+                        }, { threshold: 0.5 });
+
+                        const section = document.getElementById('artin-animation');
+                        if (section) observer.observe(section);
+
+                        function startArtinAnimation() {
+                            const ificial = 'IFICIAL';
+                            const telligence = 'TELLIGENCE';
+                            const ificialContainer = document.querySelector('.artin-expand-ificial');
+                            const telligenceContainer = document.querySelector('.artin-expand-telligence');
+
+                            // Add glow class to core letters
+                            setTimeout(() => {
+                                document.querySelectorAll('.artin-core').forEach(el => {
+                                    el.classList.add('glowing');
+                                });
+                            }, 500);
+
+                            // Animate IFICIAL letters
+                            ificial.split('').forEach((letter, i) => {
+                                setTimeout(() => {
+                                    const span = document.createElement('span');
+                                    span.textContent = letter;
+                                    span.className = 'artin-letter';
+                                    span.style.animationDelay = (i * 0.05) + 's';
+                                    ificialContainer.appendChild(span);
+                                }, 1000 + (i * 80));
+                            });
+
+                            // Animate TELLIGENCE letters
+                            telligence.split('').forEach((letter, i) => {
+                                setTimeout(() => {
+                                    const span = document.createElement('span');
+                                    span.textContent = letter;
+                                    span.className = 'artin-letter';
+                                    span.style.animationDelay = (i * 0.05) + 's';
+                                    telligenceContainer.appendChild(span);
+                                }, 1000 + (i * 80));
+                            });
+                        }
+                    })();
+                </script>
             </div>
         </section>
 

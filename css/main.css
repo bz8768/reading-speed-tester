@@ -824,33 +824,56 @@
     border-top: 1px solid rgba(139, 92, 246, 0.1);
 }
 
-.artin-source-text {
-    font-size: var(--text-sm);
-    font-weight: 300;
-    letter-spacing: 0.3em;
-    color: var(--text-muted);
+.artin-words-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
     margin-bottom: var(--space-4);
-    opacity: 0;
-    animation: fadeInUp 0.8s ease-out forwards;
 }
 
-.artin-highlight {
-    color: var(--primary);
-    font-weight: 600;
-    text-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
-}
-
-.artin-main-text {
-    font-size: clamp(3rem, 10vw, 5rem);
+.artin-word {
+    display: inline-flex;
+    font-size: clamp(2rem, 8vw, 4rem);
     font-weight: 900;
-    letter-spacing: 0.15em;
-    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 25%, #d946ef 50%, #8b5cf6 75%, #6366f1 100%);
+    letter-spacing: 0.05em;
+}
+
+.artin-core {
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #d946ef 100%);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: gradientShift 3s ease-in-out infinite, fadeInUp 0.8s ease-out 0.2s both;
-    filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.3));
+    animation: gradientShift 3s ease-in-out infinite;
+    transition: all 0.5s ease;
+}
+
+.artin-core.glowing {
+    filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.8));
+    text-shadow: 0 0 30px rgba(139, 92, 246, 0.8);
+}
+
+.artin-expand {
+    display: inline-flex;
+}
+
+.artin-letter {
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transform: translateX(-10px);
+    animation: letterFadeIn 0.4s ease-out forwards;
+}
+
+@keyframes letterFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px) scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
 }
 
 .artin-education-text {
@@ -858,9 +881,9 @@
     font-weight: 500;
     letter-spacing: 0.8em;
     color: rgba(255, 255, 255, 0.8);
-    margin-top: var(--space-2);
+    margin-top: var(--space-4);
     opacity: 0;
-    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+    animation: fadeInUp 0.8s ease-out 2.5s forwards;
 }
 
 .artin-tagline {
@@ -868,7 +891,7 @@
     color: var(--text-muted);
     margin-top: var(--space-6);
     opacity: 0;
-    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+    animation: fadeInUp 0.8s ease-out 3s forwards;
 }
 
 @keyframes gradientShift {
