@@ -88,18 +88,18 @@
 
 /* Views */
 .view {
-    display: none;
+    display: none !important;
 }
 
 .view.active {
-    display: block;
+    display: block !important;
     animation: fadeIn var(--transition-base) ease;
 }
 
 /* Quiz and Results need flex for centering */
 .quiz-view.active,
 .results-view.active {
-    display: flex;
+    display: flex !important;
 }
 
 /* Hero */
