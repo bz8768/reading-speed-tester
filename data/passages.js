@@ -768,6 +768,204 @@ Maya returned many times over the years, always through the ivy-covered wall. Ev
                 { id: "fic_005_q7", type: "multiple_choice", question: "What was Maya asked to bring to the garden?", options: ["Flowers", "Wonder, kindness, and stories", "Magic spells", "New toys"], answer: 1, explanation: "The fox said 'Bring the things people have forgotten they need—wonder, and kindness, and stories.'" },
                 { id: "fic_005_q8", type: "multiple_choice", question: "What did the garden keep alive in Maya?", options: ["Her memories", "The child inside her", "Her powers", "Her youth"], answer: 1, explanation: "The passage says 'the garden kept the child inside her alive.'" }
             ]
+        },
+        {
+            id: "fic_006",
+            category: "fiction",
+            title: "The Detective's Last Case",
+            wordCount: 243,
+            difficulty: "medium",
+            text: `Detective Rosa Martinez had seen a lot in her thirty years on the force, but the case file on her desk made no sense. A billionaire found dead in a locked room, surrounded by seven mirrors, each reflecting a different version of his death.
+
+"Poison in mirror one," her partner Chen observed. "Stabbing in mirror two. Drowning in three. But the body shows no marks, no toxins. Just... stopped."
+
+Rosa circled the room. The victim, Marcus Webb, had made his fortune in experimental physics. His last project was classified, but Rosa had sources. They called it "the probability engine"—a device that could observe all possible outcomes simultaneously.
+
+"He saw his own death," she murmured. "Every possible way he could die."
+
+"That's not how death works," Chen protested.
+
+"It is if you build a machine that shows you every future at once." Rosa picked up a shard of broken mirror from the floor, its surface still rippling with impossible images. "He didn't die from any single cause. He died from all of them. Or none of them. The act of observing collapsed every possibility into one outcome: dead."
+
+She placed the shard in an evidence bag. "Close the case. Cause of death: physics."
+
+Chen stared at her. "They'll never accept that."
+
+"I know." Rosa grabbed her coat. "That's why I'm retiring. Some cases aren't meant to be solved. They're meant to be survived."`,
+            questions: [
+                { id: "fic_006_q1", type: "yes_no", question: "Had Rosa been on the force for twenty years?", answer: false, explanation: "The passage states 'thirty years on the force.'" },
+                { id: "fic_006_q2", type: "yes_no", question: "Was the victim found surrounded by seven mirrors?", answer: true, explanation: "The passage says 'surrounded by seven mirrors.'" },
+                { id: "fic_006_q3", type: "yes_no", question: "Did the body show signs of poisoning?", answer: false, explanation: "The passage states 'the body shows no marks, no toxins.'" },
+                { id: "fic_006_q4", type: "yes_no", question: "Was Rosa planning to retire?", answer: true, explanation: "Rosa says 'That's why I'm retiring.'" },
+                { id: "fic_006_q5", type: "multiple_choice", question: "What was the victim's name?", options: ["Marcus Chen", "Marcus Webb", "Marcus Ross", "Marcus Stone"], answer: 1, explanation: "The passage identifies him as 'Marcus Webb.'" },
+                { id: "fic_006_q6", type: "multiple_choice", question: "What was the secret project called?", options: ["The death machine", "The probability engine", "The mirror device", "The future box"], answer: 1, explanation: "The passage calls it 'the probability engine.'" },
+                { id: "fic_006_q7", type: "multiple_choice", question: "How did Rosa say Marcus died?", options: ["Murder", "Suicide", "Physics", "Heart attack"], answer: 2, explanation: "Rosa said 'Cause of death: physics.'" },
+                { id: "fic_006_q8", type: "multiple_choice", question: "What was Rosa's partner's name?", options: ["Chen", "Wang", "Lee", "Kim"], answer: 0, explanation: "The passage introduces 'her partner Chen.'" }
+            ]
+        },
+        {
+            id: "fic_007",
+            category: "fiction",
+            title: "The Worst Best Date",
+            wordCount: 238,
+            difficulty: "easy",
+            text: `Emma had been looking forward to this date for weeks. Daniel was perfect on paper—tall, employed, owned more than three houseplants. What could go wrong?
+
+Everything, as it turned out.
+
+First, his car ran out of gas exactly halfway between two gas stations. Then, the "exclusive" restaurant he'd booked turned out to be closed for a health inspection. The backup plan—a charming little bistro—caught fire while they waited for bread.
+
+"Maybe we should just call it a night," Emma suggested as they watched firefighters battle the blaze.
+
+"Absolutely not," Daniel said, pulling a slightly melted baguette from his jacket. "I grabbed this before they evacuated."
+
+They sat on a park bench, sharing the warm, smoky bread, while Daniel's playlist (carefully curated for tonight) played from his dying phone speaker.
+
+"This is the worst date in recorded history," Emma said.
+
+"Agreed. Complete disaster." He handed her the larger piece. "Same time next week?"
+
+She laughed—really laughed, for the first time in months. "You want to do this again?"
+
+"I want to see what else can go wrong. I feel like tonight set a benchmark. Next time we might cause a blackout."
+
+"Or a small earthquake."
+
+"Now you're getting it."
+
+Emma took a bite of the smoky bread. It was, against all odds, delicious. Maybe perfection was overrated. Maybe catastrophe was underrated. Maybe Daniel was exactly right.`,
+            questions: [
+                { id: "fic_007_q1", type: "yes_no", question: "Did Daniel own three houseplants?", answer: false, explanation: "The passage says he 'owned more than three houseplants.'" },
+                { id: "fic_007_q2", type: "yes_no", question: "Did the restaurant catch fire?", answer: true, explanation: "The passage states 'The backup plan—a charming little bistro—caught fire.'" },
+                { id: "fic_007_q3", type: "yes_no", question: "Was the original restaurant closed for renovation?", answer: false, explanation: "It was 'closed for a health inspection,' not renovation." },
+                { id: "fic_007_q4", type: "yes_no", question: "Did they end up on a park bench?", answer: true, explanation: "The passage says 'They sat on a park bench.'" },
+                { id: "fic_007_q5", type: "multiple_choice", question: "What did Daniel pull from his jacket?", options: ["A rose", "A baguette", "His wallet", "A menu"], answer: 1, explanation: "Daniel pulled 'a slightly melted baguette from his jacket.'" },
+                { id: "fic_007_q6", type: "multiple_choice", question: "Why did the car stop?", options: ["Flat tire", "Engine trouble", "Ran out of gas", "Accident"], answer: 2, explanation: "The passage says 'his car ran out of gas.'" },
+                { id: "fic_007_q7", type: "multiple_choice", question: "What might they cause next time according to Daniel?", options: ["A flood", "A blackout", "A storm", "A riot"], answer: 1, explanation: "Daniel joked 'Next time we might cause a blackout.'" },
+                { id: "fic_007_q8", type: "multiple_choice", question: "How did Emma describe the date?", options: ["Perfect", "The worst in history", "Boring", "Romantic"], answer: 1, explanation: "Emma said 'This is the worst date in recorded history.'" }
+            ]
+        },
+        {
+            id: "fic_008",
+            category: "fiction",
+            title: "The Last Library",
+            wordCount: 251,
+            difficulty: "hard",
+            text: `In 2157, when the Burning began, Librarian Kenji was the only one who understood what was really being lost. Not just books—anyone could digitize words. What burned was the smell of old paper, the weight of a spine in your hands, the handwritten notes in margins from readers long dead.
+
+He saved what he could. A wagon, then a truck, then a hidden bunker in the mountains. Forty thousand books. The last physical library on Earth.
+
+Fifty years later, the children of the wastes found him. They'd never seen paper before. They thought the books were some kind of ancient technology.
+
+"How does it work?" asked a girl with ash-gray hair. "Where do you plug it in?"
+
+Kenji smiled and placed a book in her hands. "You don't. You open it. Then you power it with your mind."
+
+She opened the cover and began to sound out words, her brow furrowed in concentration. The other children gathered around, watching as if she were performing magic.
+
+In a way, she was.
+
+Kenji was one hundred and twelve years old. He wouldn't last another winter. But that didn't matter anymore. The girl was reading. Others would learn. The library would survive.
+
+On his desk sat a handwritten catalog of every book in the collection, every margin note documented, every coffee stain preserved in memory. His life's work. His gift to whatever came next.
+
+"The last library," one child whispered.
+
+"No," Kenji corrected gently. "The first library. Of what comes next."`,
+            questions: [
+                { id: "fic_008_q1", type: "yes_no", question: "Did the Burning begin in 2157?", answer: true, explanation: "The passage states 'In 2157, when the Burning began.'" },
+                { id: "fic_008_q2", type: "yes_no", question: "Did Kenji save thirty thousand books?", answer: false, explanation: "The passage says 'Forty thousand books,' not thirty." },
+                { id: "fic_008_q3", type: "yes_no", question: "Had the children seen paper before?", answer: false, explanation: "The passage states 'They'd never seen paper before.'" },
+                { id: "fic_008_q4", type: "yes_no", question: "Was Kenji over one hundred years old?", answer: true, explanation: "The passage says 'Kenji was one hundred and twelve years old.'" },
+                { id: "fic_008_q5", type: "multiple_choice", question: "Where did Kenji hide the books?", options: ["Underground city", "A bunker in the mountains", "An island", "A space station"], answer: 1, explanation: "He hid them in 'a hidden bunker in the mountains.'" },
+                { id: "fic_008_q6", type: "multiple_choice", question: "What color was the girl's hair?", options: ["Black", "White", "Ash-gray", "Brown"], answer: 2, explanation: "The passage describes 'a girl with ash-gray hair.'" },
+                { id: "fic_008_q7", type: "multiple_choice", question: "How did Kenji say books are powered?", options: ["Electricity", "Solar power", "Your mind", "Batteries"], answer: 2, explanation: "Kenji said 'you power it with your mind.'" },
+                { id: "fic_008_q8", type: "multiple_choice", question: "What did Kenji correct about the library?", options: ["It wasn't the last, it was the first", "It wasn't hidden", "It wasn't his", "It wasn't important"], answer: 0, explanation: "Kenji said 'No... The first library. Of what comes next.'" }
+            ]
+        },
+        {
+            id: "fic_009",
+            category: "fiction",
+            title: "The Piano in the Rain",
+            wordCount: 244,
+            difficulty: "easy",
+            text: `Mrs. Chen had played piano for sixty-three years. When the flood came and destroyed her home, the only thing she asked the rescue workers about was her Steinway.
+
+"Gone, ma'am. I'm sorry."
+
+She nodded, wrapped in a foil blanket in the emergency shelter, and said nothing more for three days.
+
+On the fourth day, a young volunteer named Marcus noticed her staring at the old upright piano in the shelter's corner—donated, out of tune, missing several keys.
+
+"Do you play?" he asked.
+
+"I did. For sixty-three years."
+
+Marcus wheeled the broken piano over to her cot. "It's not much."
+
+She touched the keys. Half of them stuck. The sound was tinny and wrong. But her fingers remembered what her heart had forgotten. She began to play—a simple melody at first, then something more complex. The notes that worked created new harmonies around the ones that didn't.
+
+Other evacuees gathered. Some cried. Some smiled. A little girl danced.
+
+"It's beautiful," Marcus said. "What is it?"
+
+"I don't know," Mrs. Chen admitted. "I think I'm making it up as I go."
+
+She played for three hours that night. When she finally stopped, she looked more alive than she had since arriving.
+
+"The Steinway was just wood and strings," she said. "This is where the music lives." She pressed her hand to her chest. "Always has been."
+
+Marcus made sure a piano was wherever Mrs. Chen was assigned next. Some things, he learned, are more essential than shelter.`,
+            questions: [
+                { id: "fic_009_q1", type: "yes_no", question: "Had Mrs. Chen played piano for fifty-three years?", answer: false, explanation: "The passage states 'sixty-three years,' not fifty-three." },
+                { id: "fic_009_q2", type: "yes_no", question: "Was the shelter piano missing some keys?", answer: true, explanation: "The passage says it was 'missing several keys.'" },
+                { id: "fic_009_q3", type: "yes_no", question: "Did Mrs. Chen speak to anyone during the first three days?", answer: false, explanation: "The passage says she 'said nothing more for three days.'" },
+                { id: "fic_009_q4", type: "yes_no", question: "Did a little boy dance while she played?", answer: false, explanation: "The passage says 'A little girl danced,' not a boy." },
+                { id: "fic_009_q5", type: "multiple_choice", question: "What brand was Mrs. Chen's original piano?", options: ["Yamaha", "Baldwin", "Steinway", "Bosendorfer"], answer: 2, explanation: "The passage mentions 'her Steinway.'" },
+                { id: "fic_009_q6", type: "multiple_choice", question: "How long did Mrs. Chen play that night?", options: ["One hour", "Two hours", "Three hours", "Four hours"], answer: 2, explanation: "The passage says 'She played for three hours that night.'" },
+                { id: "fic_009_q7", type: "multiple_choice", question: "What was the volunteer's name?", options: ["Michael", "Marcus", "Martin", "Matthew"], answer: 1, explanation: "The passage introduces 'a young volunteer named Marcus.'" },
+                { id: "fic_009_q8", type: "multiple_choice", question: "Where did Mrs. Chen say the music really lives?", options: ["In the piano", "In her hands", "In her chest", "In the air"], answer: 2, explanation: "She 'pressed her hand to her chest' and said 'This is where the music lives.'" }
+            ]
+        },
+        {
+            id: "fic_010",
+            category: "fiction",
+            title: "The Map to Nowhere",
+            wordCount: 246,
+            difficulty: "medium",
+            text: `Captain Elara had been following the map for eighteen months, and she was starting to suspect she'd been swindled. The parchment showed an island that no satellite had ever photographed, no chart had ever recorded, and no sailor had ever returned from.
+
+"Perhaps that's the point," her first mate Jonah suggested. "An island you can only find by getting lost."
+
+They'd run out of food twice. Lost three crew members to despair. The ship's compass had stopped working somewhere around month six, which Elara took as either a very bad sign or a very good one.
+
+On day 547, they found it.
+
+The island rose from the mist like a dream refusing to end. Trees of silver and gold lined beaches of black sand. In the harbor, ships from every era sat perfectly preserved—Viking longboats beside Chinese junks beside vessels that looked like nothing ever built on Earth.
+
+"Everyone who ever searched for something impossible ended up here," Jonah whispered.
+
+Elara stepped onto the beach. A woman approached—old, weathered, smiling. She wore a captain's coat from a century ago.
+
+"Welcome to Nowhere," she said. "You've been looking for us."
+
+"What happens now?"
+
+"Whatever you want. Time works differently here. You can rest. You can stay. Or you can take another map and search for the next impossible thing."
+
+Elara looked back at her ship, then at the silver trees. She thought about it for exactly three seconds.
+
+"Give me the map."`,
+            questions: [
+                { id: "fic_010_q1", type: "yes_no", question: "Had Elara been following the map for twelve months?", answer: false, explanation: "The passage states 'eighteen months,' not twelve." },
+                { id: "fic_010_q2", type: "yes_no", question: "Did they lose three crew members?", answer: true, explanation: "The passage says 'Lost three crew members to despair.'" },
+                { id: "fic_010_q3", type: "yes_no", question: "Were the beaches made of white sand?", answer: false, explanation: "The passage describes 'beaches of black sand.'" },
+                { id: "fic_010_q4", type: "yes_no", question: "Did the compass stop working around month six?", answer: true, explanation: "The passage states 'The ship's compass had stopped working somewhere around month six.'" },
+                { id: "fic_010_q5", type: "multiple_choice", question: "What color were the trees on the island?", options: ["Green and brown", "Silver and gold", "Red and orange", "Blue and purple"], answer: 1, explanation: "The passage describes 'Trees of silver and gold.'" },
+                { id: "fic_010_q6", type: "multiple_choice", question: "On what day did they find the island?", options: ["Day 365", "Day 500", "Day 547", "Day 600"], answer: 2, explanation: "The passage says 'On day 547, they found it.'" },
+                { id: "fic_010_q7", type: "multiple_choice", question: "What was the island called?", options: ["Paradise", "Nowhere", "Atlantis", "The End"], answer: 1, explanation: "The woman said 'Welcome to Nowhere.'" },
+                { id: "fic_010_q8", type: "multiple_choice", question: "What did Elara ask for at the end?", options: ["Rest", "Food", "The map", "A new ship"], answer: 2, explanation: "Elara said 'Give me the map.'" }
+            ]
         }
     ],
 
