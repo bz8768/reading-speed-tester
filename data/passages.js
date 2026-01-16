@@ -334,6 +334,284 @@ Perhaps most remarkably, Shakespeare wrote for popular audiences rather than eli
                 { id: "lit_002_q7", type: "multiple_choice", question: "What technique reveals a character's inner thoughts?", options: ["Dialogues", "Soliloquies", "Asides", "Monologues"], answer: 1, explanation: "The passage describes 'soliloquies—speeches revealing a character's inner thoughts.'" },
                 { id: "lit_002_q8", type: "multiple_choice", question: "What was the name of Shakespeare's famous theatre?", options: ["The Rose", "The Swan", "The Globe", "The Fortune"], answer: 2, explanation: "The passage mentions 'The Globe Theatre.'" }
             ]
+        },
+
+        // ============================================
+        // ADDITIONAL PASSAGES
+        // ============================================
+        {
+            id: "sci_004",
+            category: "science",
+            title: "The Human Heart",
+            wordCount: 257,
+            difficulty: "easy",
+            text: `The human heart is a remarkable organ that works tirelessly to keep us alive. About the size of a closed fist, this muscular pump beats approximately 100,000 times per day, circulating blood throughout your entire body. Over an average lifetime, the heart beats more than 2.5 billion times without ever taking a break.
+
+The heart consists of four chambers: two upper chambers called atria and two lower chambers called ventricles. The right side of the heart receives oxygen-poor blood from the body and pumps it to the lungs. The left side receives oxygen-rich blood from the lungs and pumps it throughout the body. This creates two separate circulation loops that work together seamlessly.
+
+Heart valves ensure blood flows in the correct direction. The distinctive "lub-dub" sound of a heartbeat comes from these valves opening and closing. The "lub" occurs when the valves between the atria and ventricles close, and the "dub" happens when the valves leading out of the ventricles close.
+
+Your heart's beating rhythm is controlled by an electrical system. The sinoatrial node, often called the heart's natural pacemaker, generates electrical signals that coordinate contraction. This allows the heart to maintain a steady rhythm whether you're sleeping, exercising, or feeling excited.
+
+To stay healthy, the heart needs regular exercise, a balanced diet, and adequate rest. Cardiovascular exercise strengthens the heart muscle, making it more efficient. Reducing salt and saturated fat consumption helps prevent plaque buildup in arteries. Taking care of your heart today ensures it will keep beating strong for years to come.`,
+            questions: [
+                { id: "sci_004_q1", type: "yes_no", question: "Does the heart beat approximately 100,000 times per day?", answer: true, explanation: "The passage states 'this muscular pump beats approximately 100,000 times per day.'" },
+                { id: "sci_004_q2", type: "yes_no", question: "Is the heart about the size of two closed fists?", answer: false, explanation: "The passage says 'About the size of a closed fist'—one fist, not two." },
+                { id: "sci_004_q3", type: "yes_no", question: "Does the right side of the heart pump blood to the lungs?", answer: true, explanation: "The passage states 'The right side of the heart receives oxygen-poor blood from the body and pumps it to the lungs.'" },
+                { id: "sci_004_q4", type: "yes_no", question: "Is the 'dub' sound caused by valves between atria and ventricles closing?", answer: false, explanation: "The passage says the 'lub' is from those valves; the 'dub' is from 'valves leading out of the ventricles.'" },
+                { id: "sci_004_q5", type: "multiple_choice", question: "How many chambers does the heart have?", options: ["Two", "Three", "Four", "Five"], answer: 2, explanation: "The passage states 'The heart consists of four chambers.'" },
+                { id: "sci_004_q6", type: "multiple_choice", question: "What is the heart's natural pacemaker called?", options: ["Ventricle node", "Sinoatrial node", "Cardiac node", "Atrial node"], answer: 1, explanation: "The passage mentions 'The sinoatrial node, often called the heart's natural pacemaker.'" },
+                { id: "sci_004_q7", type: "multiple_choice", question: "How many times does the heart beat in an average lifetime?", options: ["500 million", "1 billion", "More than 2.5 billion", "10 billion"], answer: 2, explanation: "The passage states 'the heart beats more than 2.5 billion times.'" },
+                { id: "sci_004_q8", type: "multiple_choice", question: "What type of blood does the left side of the heart receive?", options: ["Oxygen-poor blood", "Oxygen-rich blood", "Mixed blood", "Filtered blood"], answer: 1, explanation: "The passage says 'The left side receives oxygen-rich blood from the lungs.'" }
+            ]
+        },
+        {
+            id: "hist_004",
+            category: "history",
+            title: "The Industrial Revolution",
+            wordCount: 274,
+            difficulty: "medium",
+            text: `The Industrial Revolution, beginning in Britain in the late 18th century, transformed human society more rapidly and profoundly than any event since the development of agriculture. Within a few generations, predominantly agricultural societies became industrialized urban centers, forever changing how people lived, worked, and related to one another.
+
+This transformation began with innovations in textile manufacturing. The spinning jenny, water frame, and power loom mechanized the production of cloth, dramatically increasing output while reducing costs. These machines required new power sources, driving the development of steam engines. James Watt's improved steam engine, patented in 1769, became the driving force of industrialization.
+
+Factories replaced cottage industries, concentrating workers in purpose-built facilities near power sources. This shift created new urban centers as people migrated from rural areas seeking employment. Cities like Manchester grew from small towns into sprawling industrial hubs within decades. By 1850, Britain had become the first nation where more people lived in cities than in the countryside.
+
+Working conditions in early factories were often harsh. Twelve to sixteen-hour workdays were common, and child labor was widespread. Safety regulations were virtually nonexistent, leading to frequent accidents. Over time, reform movements pushed for better conditions, leading to laws limiting working hours and establishing safety standards.
+
+The Industrial Revolution spread from Britain across Europe, to North America, and eventually worldwide. It brought unprecedented material prosperity but also new challenges: pollution, urban poverty, and social inequality. Perhaps most significantly, it established the pattern of continuous technological innovation and economic growth that defines modern society.`,
+            questions: [
+                { id: "hist_004_q1", type: "yes_no", question: "Did the Industrial Revolution begin in France?", answer: false, explanation: "The passage states it began 'in Britain in the late 18th century.'" },
+                { id: "hist_004_q2", type: "yes_no", question: "Was child labor widespread in early factories?", answer: true, explanation: "The passage explicitly states 'child labor was widespread.'" },
+                { id: "hist_004_q3", type: "yes_no", question: "Did James Watt invent the first steam engine?", answer: false, explanation: "The passage says 'James Watt's improved steam engine'—indicating he improved it, not invented it." },
+                { id: "hist_004_q4", type: "yes_no", question: "By 1850, did more British people live in cities than countryside?", answer: true, explanation: "The passage states 'By 1850, Britain had become the first nation where more people lived in cities than in the countryside.'" },
+                { id: "hist_004_q5", type: "multiple_choice", question: "Which industry first saw mechanization?", options: ["Iron", "Textile", "Mining", "Agriculture"], answer: 1, explanation: "The passage says 'This transformation began with innovations in textile manufacturing.'" },
+                { id: "hist_004_q6", type: "multiple_choice", question: "When was Watt's steam engine patented?", options: ["1750", "1769", "1800", "1850"], answer: 1, explanation: "The passage states 'patented in 1769.'" },
+                { id: "hist_004_q7", type: "multiple_choice", question: "How long were typical workdays in early factories?", options: ["6 to 8 hours", "8 to 10 hours", "12 to 16 hours", "18 to 20 hours"], answer: 2, explanation: "The passage mentions 'Twelve to sixteen-hour workdays were common.'" },
+                { id: "hist_004_q8", type: "multiple_choice", question: "Which city is mentioned as an example of rapid industrial growth?", options: ["London", "Manchester", "Liverpool", "Birmingham"], answer: 1, explanation: "The passage says 'Cities like Manchester grew from small towns into sprawling industrial hubs.'" }
+            ]
+        },
+        {
+            id: "tech_003",
+            category: "technology",
+            title: "How Smartphones Work",
+            wordCount: 268,
+            difficulty: "easy",
+            text: `Smartphones have become essential tools in modern life, combining dozens of devices into one pocket-sized package. What was once science fiction—a portable device for calls, photography, navigation, and instant global communication—is now considered ordinary. Understanding how these remarkable devices work reveals the sophisticated technology we carry daily.
+
+At the heart of every smartphone is a processor, essentially a miniature computer. Modern smartphone processors contain billions of transistors packed into a chip smaller than a fingernail. These processors perform billions of calculations per second, handling everything from running apps to processing camera images.
+
+The touchscreen is perhaps the most visible technology. Capacitive touchscreens detect the electrical charge in your fingers when you touch them. A grid of sensors beneath the glass surface detects these touches and their locations with remarkable precision, allowing for multi-touch gestures like pinching and swiping.
+
+Smartphones connect to the world through multiple wireless technologies. Cellular networks allow voice calls and mobile data through radio signals exchanged with nearby towers. Wi-Fi provides high-speed internet connections over shorter ranges. Bluetooth enables connections to headphones, speakers, and other accessories. GPS satellites help determine your location anywhere on Earth.
+
+Sensors transform smartphones into versatile tools. Accelerometers detect movement and orientation, enabling screen rotation and fitness tracking. Gyroscopes measure rotation for augmented reality and gaming. Cameras capture light through lens systems with sophisticated software processing. Most phones also include fingerprint sensors or facial recognition for security.
+
+Battery technology powers all these capabilities. Lithium-ion batteries store energy efficiently and recharge hundreds of times. Engineers constantly work to balance performance with battery life, one of smartphone design's greatest challenges.`,
+            questions: [
+                { id: "tech_003_q1", type: "yes_no", question: "Do modern smartphone processors contain millions of transistors?", answer: false, explanation: "The passage states 'billions of transistors'—not millions." },
+                { id: "tech_003_q2", type: "yes_no", question: "Do capacitive touchscreens detect electrical charge from fingers?", answer: true, explanation: "The passage says 'Capacitive touchscreens detect the electrical charge in your fingers.'" },
+                { id: "tech_003_q3", type: "yes_no", question: "Is Bluetooth used for long-range internet connections?", answer: false, explanation: "The passage says Bluetooth 'enables connections to headphones, speakers, and other accessories'—not long-range internet." },
+                { id: "tech_003_q4", type: "yes_no", question: "Do accelerometers enable screen rotation?", answer: true, explanation: "The passage states 'Accelerometers detect movement and orientation, enabling screen rotation.'" },
+                { id: "tech_003_q5", type: "multiple_choice", question: "What determines your location anywhere on Earth?", options: ["Cellular towers", "Wi-Fi networks", "GPS satellites", "Bluetooth signals"], answer: 2, explanation: "The passage says 'GPS satellites help determine your location anywhere on Earth.'" },
+                { id: "tech_003_q6", type: "multiple_choice", question: "What type of battery do smartphones use?", options: ["Alkaline", "Nickel-cadmium", "Lithium-ion", "Lead-acid"], answer: 2, explanation: "The passage mentions 'Lithium-ion batteries.'" },
+                { id: "tech_003_q7", type: "multiple_choice", question: "What measure rotation for augmented reality?", options: ["Accelerometers", "Gyroscopes", "Cameras", "GPS"], answer: 1, explanation: "The passage says 'Gyroscopes measure rotation for augmented reality and gaming.'" },
+                { id: "tech_003_q8", type: "multiple_choice", question: "How do cellular networks connect phones?", options: ["Through cables", "Through radio signals", "Through satellites only", "Through Wi-Fi"], answer: 1, explanation: "The passage explains cellular networks work 'through radio signals exchanged with nearby towers.'" }
+            ]
+        },
+        {
+            id: "nat_003",
+            category: "nature",
+            title: "How Volcanoes Form",
+            wordCount: 262,
+            difficulty: "medium",
+            text: `Volcanoes are among Earth's most powerful and dramatic natural phenomena. These openings in the Earth's crust allow molten rock, gases, and ash to escape from deep beneath the surface. Understanding how volcanoes form reveals the dynamic forces that continue to shape our planet.
+
+Most volcanoes form at the boundaries of tectonic plates—the massive slabs of rock that make up Earth's outer shell. At divergent boundaries, where plates move apart, magma rises to fill the gap, creating volcanic ridges like the Mid-Atlantic Ridge. At convergent boundaries, where one plate slides beneath another, the descending plate melts and the resulting magma rises to form volcanic chains.
+
+The Ring of Fire, encircling the Pacific Ocean, contains about 75% of the world's active volcanoes. This horseshoe-shaped zone marks the edges of several tectonic plates that are converging with the Pacific Plate. Countries like Japan, Indonesia, and Chile experience frequent volcanic activity due to their location along this ring.
+
+Not all volcanoes form at plate boundaries. Hotspots are locations where unusually hot mantle material rises through the Earth's crust, creating volcanoes far from plate edges. The Hawaiian Islands formed this way, as the Pacific Plate moved over a stationary hotspot, creating a chain of volcanic islands.
+
+Volcanic eruptions vary from gentle lava flows to explosive blasts. The type of eruption depends largely on the magma's composition. Thin, runny magma allows gases to escape easily, producing relatively calm eruptions. Thick, sticky magma traps gases, building pressure that can result in catastrophic explosions. Despite their danger, volcanoes create fertile soils and shape landscapes that support diverse ecosystems.`,
+            questions: [
+                { id: "nat_003_q1", type: "yes_no", question: "Do most volcanoes form at the center of tectonic plates?", answer: false, explanation: "The passage states 'Most volcanoes form at the boundaries of tectonic plates.'" },
+                { id: "nat_003_q2", type: "yes_no", question: "Does the Ring of Fire contain about 75% of the world's active volcanoes?", answer: true, explanation: "The passage says 'The Ring of Fire... contains about 75% of the world's active volcanoes.'" },
+                { id: "nat_003_q3", type: "yes_no", question: "Did the Hawaiian Islands form at a plate boundary?", answer: false, explanation: "The passage says Hawaii 'formed this way' referring to hotspots 'far from plate edges.'" },
+                { id: "nat_003_q4", type: "yes_no", question: "Does thick magma produce calm eruptions?", answer: false, explanation: "The passage says 'Thick, sticky magma traps gases, building pressure that can result in catastrophic explosions.'" },
+                { id: "nat_003_q5", type: "multiple_choice", question: "What happens at divergent plate boundaries?", options: ["Plates collide", "Plates move apart", "Plates slide past each other", "Nothing happens"], answer: 1, explanation: "The passage describes 'divergent boundaries, where plates move apart.'" },
+                { id: "nat_003_q6", type: "multiple_choice", question: "What percentage of active volcanoes is in the Ring of Fire?", options: ["About 25%", "About 50%", "About 75%", "About 90%"], answer: 2, explanation: "The passage states 'about 75% of the world's active volcanoes.'" },
+                { id: "nat_003_q7", type: "multiple_choice", question: "What are hotspots?", options: ["Plate boundaries", "Locations where hot mantle rises through crust", "Underwater volcanoes", "Volcanic islands"], answer: 1, explanation: "The passage defines hotspots as 'locations where unusually hot mantle material rises through the Earth's crust.'" },
+                { id: "nat_003_q8", type: "multiple_choice", question: "Which countries are mentioned as being on the Ring of Fire?", options: ["Australia and India", "Japan and Indonesia", "France and Germany", "Canada and Mexico"], answer: 1, explanation: "The passage mentions 'Countries like Japan, Indonesia, and Chile.'" }
+            ]
+        },
+        {
+            id: "lit_003",
+            category: "literature",
+            title: "Poetry Through the Ages",
+            wordCount: 275,
+            difficulty: "medium",
+            text: `Poetry, the art of condensed expression through language, has been part of human culture for thousands of years. From ancient oral traditions to contemporary spoken word, poets have used rhythm, imagery, and emotion to capture experiences that prose cannot easily convey.
+
+The earliest known poetry comes from ancient Mesopotamia and Egypt, where hymns and epic tales were recorded on clay tablets and papyrus. Homer's Iliad and Odyssey, composed around 750 BCE, established patterns of epic poetry that influenced Western literature for millennia. In ancient Greece and Rome, poetry was central to education, entertainment, and religious practice.
+
+Different cultures developed distinctive poetic traditions. Japanese haiku distills moments of awareness into seventeen syllables. Persian ghazals explore love and loss through intricate rhyme schemes. Chinese classical poetry emphasizes nature imagery and philosophical reflection. Each tradition offers unique approaches to the craft of verse.
+
+The invention of printing transformed poetry's reach. Works by Shakespeare, Milton, and later the Romantic poets—Wordsworth, Keats, Shelley—reached audiences far beyond the courts and salons where poetry had previously flourished. The Romantics celebrated individual emotion, nature, and imagination, establishing themes that continue to resonate.
+
+Modern and contemporary poetry often breaks from traditional forms. Free verse abandons regular meter and rhyme, focusing instead on natural speech rhythms and imagery. Movements like Imagism, led by poets such as Ezra Pound, emphasized precision and economy of language. Today's poetry continues to evolve through diverse voices exploring identity, social justice, and the human condition.
+
+Whether ancient or modern, formal or free, poetry remains a vital art form. Its power lies in its ability to compress meaning, evoke emotion, and reveal truth in ways that continue to move readers across centuries and cultures.`,
+            questions: [
+                { id: "lit_003_q1", type: "yes_no", question: "Is the earliest known poetry from ancient Greece?", answer: false, explanation: "The passage states 'The earliest known poetry comes from ancient Mesopotamia and Egypt.'" },
+                { id: "lit_003_q2", type: "yes_no", question: "Does haiku use seventeen syllables?", answer: true, explanation: "The passage says 'Japanese haiku distills moments of awareness into seventeen syllables.'" },
+                { id: "lit_003_q3", type: "yes_no", question: "Does free verse use regular meter and rhyme?", answer: false, explanation: "The passage says 'Free verse abandons regular meter and rhyme.'" },
+                { id: "lit_003_q4", type: "yes_no", question: "Was Ezra Pound associated with the Imagism movement?", answer: true, explanation: "The passage mentions 'Movements like Imagism, led by poets such as Ezra Pound.'" },
+                { id: "lit_003_q5", type: "multiple_choice", question: "When was Homer's Iliad and Odyssey composed?", options: ["Around 500 BCE", "Around 750 BCE", "Around 1000 BCE", "Around 200 CE"], answer: 1, explanation: "The passage states 'composed around 750 BCE.'" },
+                { id: "lit_003_q6", type: "multiple_choice", question: "What does Persian ghazal poetry explore?", options: ["War and battle", "Love and loss", "Nature only", "Politics"], answer: 1, explanation: "The passage says 'Persian ghazals explore love and loss.'" },
+                { id: "lit_003_q7", type: "multiple_choice", question: "Which movement celebrated individual emotion and nature?", options: ["Imagism", "Romanticism", "Classicism", "Modernism"], answer: 1, explanation: "The passage says 'The Romantics celebrated individual emotion, nature, and imagination.'" },
+                { id: "lit_003_q8", type: "multiple_choice", question: "What did the Imagist movement emphasize?", options: ["Long descriptions", "Precision and economy", "Rhyme schemes", "Epic narratives"], answer: 1, explanation: "The passage states Imagism 'emphasized precision and economy of language.'" }
+            ]
+        },
+        {
+            id: "sci_005",
+            category: "science",
+            title: "The Science of Sleep",
+            wordCount: 280,
+            difficulty: "easy",
+            text: `Sleep is one of the most essential but least understood aspects of human life. We spend roughly one-third of our lives asleep, yet scientists are still uncovering the complex processes that occur during these crucial hours of rest.
+
+Sleep occurs in cycles lasting approximately 90 minutes, alternating between two main types: REM (rapid eye movement) and non-REM sleep. Non-REM sleep has three stages, progressing from light sleep to deep sleep. During deep sleep, your body repairs tissues, builds bone and muscle, and strengthens the immune system. REM sleep, characterized by vivid dreams and rapid eye movements, is crucial for memory consolidation and emotional processing.
+
+The brain doesn't simply shut down during sleep. Instead, it performs vital maintenance tasks. Cerebrospinal fluid flows through the brain, clearing away toxins that accumulate during waking hours. This cleaning process, called the glymphatic system, removes proteins linked to Alzheimer's disease. Without adequate sleep, these toxins can build up.
+
+Sleep deprivation has serious consequences. After just 24 hours without sleep, cognitive function declines significantly. Chronic sleep loss is linked to obesity, diabetes, cardiovascular disease, and weakened immunity. It also impairs judgment, reaction time, and emotional regulation, making everyday activities like driving dangerous.
+
+Your body regulates sleep through two processes: the circadian rhythm—your internal 24-hour clock—and sleep pressure, which builds the longer you stay awake. Light exposure, particularly blue light from screens, can disrupt circadian rhythms by suppressing melatonin, the hormone that promotes sleep.
+
+Adults generally need seven to nine hours of sleep per night, though individual needs vary. Creating a consistent sleep schedule, limiting screen time before bed, and maintaining a cool, dark bedroom can all improve sleep quality. Good sleep isn't a luxury—it's a biological necessity.`,
+            questions: [
+                { id: "sci_005_q1", type: "yes_no", question: "Do sleep cycles last approximately 90 minutes?", answer: true, explanation: "The passage states 'Sleep occurs in cycles lasting approximately 90 minutes.'" },
+                { id: "sci_005_q2", type: "yes_no", question: "Does the brain shut down completely during sleep?", answer: false, explanation: "The passage says 'The brain doesn't simply shut down during sleep. Instead, it performs vital maintenance tasks.'" },
+                { id: "sci_005_q3", type: "yes_no", question: "Is REM sleep characterized by vivid dreams?", answer: true, explanation: "The passage states 'REM sleep, characterized by vivid dreams and rapid eye movements.'" },
+                { id: "sci_005_q4", type: "yes_no", question: "Does blue light increase melatonin production?", answer: false, explanation: "The passage says blue light 'can disrupt circadian rhythms by suppressing melatonin.'" },
+                { id: "sci_005_q5", type: "multiple_choice", question: "How many stages does non-REM sleep have?", options: ["Two", "Three", "Four", "Five"], answer: 1, explanation: "The passage states 'Non-REM sleep has three stages.'" },
+                { id: "sci_005_q6", type: "multiple_choice", question: "What is the brain's cleaning process during sleep called?", options: ["Lymphatic system", "Glymphatic system", "Circulatory system", "Nervous system"], answer: 1, explanation: "The passage mentions 'This cleaning process, called the glymphatic system.'" },
+                { id: "sci_005_q7", type: "multiple_choice", question: "What happens to cognitive function after 24 hours without sleep?", options: ["It improves", "It stays the same", "It declines significantly", "It fluctuates"], answer: 2, explanation: "The passage says 'After just 24 hours without sleep, cognitive function declines significantly.'" },
+                { id: "sci_005_q8", type: "multiple_choice", question: "How many hours of sleep do adults generally need?", options: ["5 to 6 hours", "7 to 9 hours", "10 to 12 hours", "4 to 5 hours"], answer: 1, explanation: "The passage states 'Adults generally need seven to nine hours of sleep per night.'" }
+            ]
+        },
+        {
+            id: "hist_005",
+            category: "history",
+            title: "The Ancient Olympics",
+            wordCount: 265,
+            difficulty: "easy",
+            text: `The Olympic Games began in ancient Greece around 776 BCE and continued for over a thousand years, becoming one of the most important athletic and religious festivals of the ancient world. These games laid the foundation for the modern Olympic movement that captivates billions today.
+
+The ancient Olympics were held every four years at Olympia, a sanctuary dedicated to Zeus, the king of Greek gods. The games were so significant that even wars would pause during the Olympic truce, allowing athletes and spectators to travel safely to the competition. This truce, called the ekecheiria, typically lasted three months.
+
+Only free Greek men could compete in the ancient Olympics. Athletes competed nude and women were forbidden from even attending as spectators, though they had their own separate festival called the Heraean Games. Events included running, wrestling, boxing, the pentathlon, and chariot racing. Winners received olive wreaths cut from a sacred tree near Zeus's temple.
+
+The games were as much religious as athletic. Sacrifices to Zeus accompanied the competitions, and the festival included prayers, processions, and feasts. Athletes swore oaths to compete fairly before a statue of Zeus, and cheating was severely punished with fines and public shaming.
+
+Greek colonies spread Olympic traditions across the Mediterranean. Similar games emerged throughout the Greek world, but the Olympics at Olympia remained the most prestigious. The ancient Olympics ended in 393 CE when the Roman Emperor Theodosius I banned pagan festivals.
+
+The modern Olympics, revived by Pierre de Coubertin in 1896, drew inspiration from these ancient games. While today's events would be unrecognizable to ancient Greeks, the spirit of athletic excellence and international cooperation echoes across millennia.`,
+            questions: [
+                { id: "hist_005_q1", type: "yes_no", question: "Did the ancient Olympics begin around 776 BCE?", answer: true, explanation: "The passage states 'The Olympic Games began in ancient Greece around 776 BCE.'" },
+                { id: "hist_005_q2", type: "yes_no", question: "Could women compete in the ancient Olympics?", answer: false, explanation: "The passage says 'Only free Greek men could compete' and 'women were forbidden from even attending.'" },
+                { id: "hist_005_q3", type: "yes_no", question: "Were the ancient Olympics purely athletic events?", answer: false, explanation: "The passage says 'The games were as much religious as athletic.'" },
+                { id: "hist_005_q4", type: "yes_no", question: "Did winners receive gold medals?", answer: false, explanation: "The passage states 'Winners received olive wreaths.'" },
+                { id: "hist_005_q5", type: "multiple_choice", question: "How often were the ancient Olympics held?", options: ["Every year", "Every two years", "Every four years", "Every ten years"], answer: 2, explanation: "The passage says 'held every four years.'" },
+                { id: "hist_005_q6", type: "multiple_choice", question: "What was the Olympic truce called?", options: ["Pax Olympica", "Ekecheiria", "Agon", "Stadion"], answer: 1, explanation: "The passage mentions 'This truce, called the ekecheiria.'" },
+                { id: "hist_005_q7", type: "multiple_choice", question: "When did the ancient Olympics end?", options: ["393 BCE", "393 CE", "776 CE", "1896 CE"], answer: 1, explanation: "The passage states 'The ancient Olympics ended in 393 CE.'" },
+                { id: "hist_005_q8", type: "multiple_choice", question: "Who revived the modern Olympics?", options: ["Julius Caesar", "Zeus", "Pierre de Coubertin", "Theodosius I"], answer: 2, explanation: "The passage mentions 'The modern Olympics, revived by Pierre de Coubertin in 1896.'" }
+            ]
+        },
+        {
+            id: "tech_004",
+            category: "technology",
+            title: "Electric Vehicles Explained",
+            wordCount: 272,
+            difficulty: "medium",
+            text: `Electric vehicles are transforming transportation, offering a cleaner alternative to traditional gasoline-powered cars. As battery technology improves and charging infrastructure expands, EVs are becoming increasingly practical for everyday drivers.
+
+Unlike conventional vehicles that burn fuel in internal combustion engines, EVs use electric motors powered by rechargeable batteries. These motors are simpler than engines, with fewer moving parts that can wear out. Electric motors also convert energy to motion more efficiently—approximately 85-90% of electrical energy becomes movement, compared to only 20-30% for gasoline engines.
+
+The battery pack is the heart of an electric vehicle, typically consisting of thousands of lithium-ion cells similar to those in smartphones, but larger. Modern EV batteries can store enough energy to travel 250-400 miles on a single charge. However, batteries remain expensive, accounting for roughly 30% of a vehicle's cost, though prices continue to fall.
+
+Charging an EV differs from refueling a gas car. Level 1 charging uses standard household outlets but is slow, adding about 4-5 miles of range per hour. Level 2 charging, using 240-volt outlets like those for dryers, adds 25-30 miles per hour. DC fast charging can add 200 miles in about 30 minutes, making long trips more feasible.
+
+EVs produce zero direct emissions, though their environmental impact depends on how electricity is generated. In regions powered by renewable energy, EVs are significantly cleaner than gasoline cars. They're also quieter and require less maintenance since they lack oil changes, transmission repairs, and exhaust system components.
+
+Despite advantages, challenges remain: higher upfront costs, limited charging infrastructure in some areas, and concerns about battery lifespan. However, ongoing innovation continues to address these obstacles, making electric vehicles an increasingly compelling choice.`,
+            questions: [
+                { id: "tech_004_q1", type: "yes_no", question: "Do electric motors have more moving parts than combustion engines?", answer: false, explanation: "The passage says motors are 'simpler than engines, with fewer moving parts.'" },
+                { id: "tech_004_q2", type: "yes_no", question: "Do EVs convert about 85-90% of energy to movement?", answer: true, explanation: "The passage states 'approximately 85-90% of electrical energy becomes movement.'" },
+                { id: "tech_004_q3", type: "yes_no", question: "Do EVs produce zero direct emissions?", answer: true, explanation: "The passage says 'EVs produce zero direct emissions.'" },
+                { id: "tech_004_q4", type: "yes_no", question: "Do EV batteries account for about 50% of vehicle cost?", answer: false, explanation: "The passage says 'accounting for roughly 30% of a vehicle's cost.'" },
+                { id: "tech_004_q5", type: "multiple_choice", question: "How many miles can modern EV batteries typically travel?", options: ["50-100 miles", "150-200 miles", "250-400 miles", "500-600 miles"], answer: 2, explanation: "The passage states batteries can 'travel 250-400 miles on a single charge.'" },
+                { id: "tech_004_q6", type: "multiple_choice", question: "How much range does Level 1 charging add per hour?", options: ["4-5 miles", "25-30 miles", "50 miles", "100 miles"], answer: 0, explanation: "The passage says Level 1 charging 'adding about 4-5 miles of range per hour.'" },
+                { id: "tech_004_q7", type: "multiple_choice", question: "What percentage of energy do gasoline engines convert to motion?", options: ["5-10%", "20-30%", "50-60%", "70-80%"], answer: 1, explanation: "The passage states 'only 20-30% for gasoline engines.'" },
+                { id: "tech_004_q8", type: "multiple_choice", question: "What maintenance do EVs NOT require?", options: ["Tire rotation", "Oil changes", "Brake inspection", "Wiper replacement"], answer: 1, explanation: "The passage mentions EVs 'lack oil changes, transmission repairs, and exhaust system components.'" }
+            ]
+        },
+        {
+            id: "nat_004",
+            category: "nature",
+            title: "The Amazon Rainforest",
+            wordCount: 278,
+            difficulty: "easy",
+            text: `The Amazon rainforest is the world's largest tropical rainforest, spanning approximately 5.5 million square kilometers across nine South American countries. Often called "the lungs of the Earth," this vast wilderness plays a crucial role in regulating global climate and harboring an extraordinary diversity of life.
+
+The Amazon River, which gives the forest its name, is the world's largest river by water volume, discharging more water into the ocean than the next seven largest rivers combined. During the wet season, parts of the forest flood for months, creating unique ecosystems where fish swim among tree roots and dolphins navigate through forest waterways.
+
+Biodiversity in the Amazon is staggering. The forest is home to about 10% of all species on Earth, including approximately 40,000 plant species, 1,300 bird species, and 3,000 types of fish. Scientists continue to discover new species regularly—an estimated 2,000 new species have been identified in recent decades. Many Amazon plants provide compounds used in modern medicine.
+
+Indigenous peoples have lived in the Amazon for at least 11,000 years, developing profound knowledge of the forest's plants and animals. Today, about 400 indigenous groups, speaking numerous languages, still call the forest home. Their traditional practices often protect biodiversity more effectively than official conservation areas.
+
+The Amazon faces severe threats from deforestation. Cattle ranching, soybean farming, logging, and mining have destroyed vast areas, with effects extending far beyond the forest. Trees release stored carbon when burned, contributing to climate change. Deforestation also disrupts rainfall patterns across South America and beyond.
+
+Conservation efforts seek to balance economic development with forest protection. Sustainable practices, indigenous land rights, and international cooperation offer hope, but the forest's future depends on global commitment to its preservation.`,
+            questions: [
+                { id: "nat_004_q1", type: "yes_no", question: "Is the Amazon the world's largest tropical rainforest?", answer: true, explanation: "The passage states 'The Amazon rainforest is the world's largest tropical rainforest.'" },
+                { id: "nat_004_q2", type: "yes_no", question: "Does the Amazon River discharge less water than most other major rivers?", answer: false, explanation: "The passage says it discharges 'more water into the ocean than the next seven largest rivers combined.'" },
+                { id: "nat_004_q3", type: "yes_no", question: "Have indigenous peoples lived in the Amazon for at least 11,000 years?", answer: true, explanation: "The passage states 'Indigenous peoples have lived in the Amazon for at least 11,000 years.'" },
+                { id: "nat_004_q4", type: "yes_no", question: "Is cattle ranching a threat to the Amazon?", answer: true, explanation: "The passage mentions 'Cattle ranching, soybean farming, logging, and mining have destroyed vast areas.'" },
+                { id: "nat_004_q5", type: "multiple_choice", question: "Approximately how large is the Amazon rainforest?", options: ["1 million sq km", "3 million sq km", "5.5 million sq km", "10 million sq km"], answer: 2, explanation: "The passage states 'approximately 5.5 million square kilometers.'" },
+                { id: "nat_004_q6", type: "multiple_choice", question: "What percentage of Earth's species live in the Amazon?", options: ["About 5%", "About 10%", "About 25%", "About 50%"], answer: 1, explanation: "The passage says 'about 10% of all species on Earth.'" },
+                { id: "nat_004_q7", type: "multiple_choice", question: "How many plant species are in the Amazon?", options: ["About 10,000", "About 25,000", "About 40,000", "About 100,000"], answer: 2, explanation: "The passage mentions 'approximately 40,000 plant species.'" },
+                { id: "nat_004_q8", type: "multiple_choice", question: "How many indigenous groups live in the Amazon today?", options: ["About 50", "About 100", "About 400", "About 1,000"], answer: 2, explanation: "The passage states 'about 400 indigenous groups.'" }
+            ]
+        },
+        {
+            id: "hist_006",
+            category: "history",
+            title: "The Renaissance",
+            wordCount: 283,
+            difficulty: "medium",
+            text: `The Renaissance, meaning "rebirth" in French, was a cultural movement that began in Italy in the 14th century and spread across Europe over the next three centuries. This period marked a profound transformation in art, science, and thought, bridging the medieval world and the modern era.
+
+The Renaissance emerged first in Italian city-states like Florence, Venice, and Rome. Wealthy merchant families, especially the Medici of Florence, became patrons of artists and scholars, funding works that still define Western culture. The rediscovery of ancient Greek and Roman texts inspired a new emphasis on human potential and achievement, a philosophy called humanism.
+
+Art underwent a revolution during this period. Artists like Leonardo da Vinci, Michelangelo, and Raphael created masterpieces using techniques like linear perspective, realistic anatomy, and chiaroscuro—the dramatic use of light and shadow. Leonardo's "Mona Lisa" and Michelangelo's Sistine Chapel ceiling exemplify the period's artistic achievement.
+
+Scientific thought also flourished. Nicolaus Copernicus proposed that Earth revolved around the sun, challenging centuries of accepted belief. Galileo Galilei improved the telescope and made observations supporting this heliocentric model. The printing press, invented by Johannes Gutenberg around 1440, revolutionized the spread of knowledge, making books affordable and literacy more common.
+
+The Renaissance transformed thinking about politics and society. Niccolò Machiavelli's "The Prince" offered a pragmatic analysis of political power, while scholars questioned traditional religious authority. This spirit of inquiry eventually contributed to the Protestant Reformation and the Scientific Revolution that followed.
+
+Though historians debate the Renaissance's precise boundaries and impact, its legacy is undeniable. The period established foundations for modern science, art, and philosophy. The idea that humans could understand and improve their world through reason, creativity, and education remains central to Western thought today.`,
+            questions: [
+                { id: "hist_006_q1", type: "yes_no", question: "Did the Renaissance begin in France?", answer: false, explanation: "The passage states 'the Renaissance... began in Italy in the 14th century.'" },
+                { id: "hist_006_q2", type: "yes_no", question: "Were the Medici family patrons of artists?", answer: true, explanation: "The passage mentions 'Wealthy merchant families, especially the Medici of Florence, became patrons of artists.'" },
+                { id: "hist_006_q3", type: "yes_no", question: "Did Copernicus propose Earth revolved around the sun?", answer: true, explanation: "The passage says 'Nicolaus Copernicus proposed that Earth revolved around the sun.'" },
+                { id: "hist_006_q4", type: "yes_no", question: "Was the printing press invented by Leonardo da Vinci?", answer: false, explanation: "The passage says it was 'invented by Johannes Gutenberg around 1440.'" },
+                { id: "hist_006_q5", type: "multiple_choice", question: "What does 'Renaissance' mean?", options: ["Revolution", "Rebirth", "Renewal", "Reform"], answer: 1, explanation: "The passage states 'The Renaissance, meaning \"rebirth\" in French.'" },
+                { id: "hist_006_q6", type: "multiple_choice", question: "What is chiaroscuro?", options: ["A type of paint", "The use of light and shadow", "A sculpture technique", "A type of architecture"], answer: 1, explanation: "The passage defines it as 'the dramatic use of light and shadow.'" },
+                { id: "hist_006_q7", type: "multiple_choice", question: "When was the printing press invented?", options: ["Around 1340", "Around 1440", "Around 1540", "Around 1640"], answer: 1, explanation: "The passage states 'invented by Johannes Gutenberg around 1440.'" },
+                { id: "hist_006_q8", type: "multiple_choice", question: "What philosophy emphasized human potential?", options: ["Scholasticism", "Humanism", "Rationalism", "Empiricism"], answer: 1, explanation: "The passage describes 'a philosophy called humanism' about 'human potential and achievement.'" }
+            ]
         }
     ],
 
@@ -357,7 +635,7 @@ Perhaps most remarkably, Shakespeare wrote for popular audiences rather than eli
     getQuestionsForPassage(passageId, count = 20) {
         const passage = this.getPassageById(passageId);
         if (!passage) return [];
-        
+
         const questions = [...passage.questions];
         // Shuffle and return up to 'count' questions
         for (let i = questions.length - 1; i > 0; i--) {

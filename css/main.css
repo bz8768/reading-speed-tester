@@ -96,6 +96,12 @@
     animation: fadeIn var(--transition-base) ease;
 }
 
+/* Quiz and Results need flex for centering */
+.quiz-view.active,
+.results-view.active {
+    display: flex;
+}
+
 /* Hero */
 .hero {
     padding: var(--space-20) var(--space-6);

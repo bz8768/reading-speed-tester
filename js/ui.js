@@ -281,7 +281,7 @@ const UI = {
     },
 
     // Show answer result
-    showAnswerResult(answerRecord, onNext) {
+    showAnswerResult(answerRecord) {
         const buttons = this.elements.answersContainer.querySelectorAll('.answer-btn');
 
         buttons.forEach((btn, i) => {
@@ -299,6 +299,9 @@ const UI = {
         }
         if (this.elements.nextQuestionBtn) {
             this.elements.nextQuestionBtn.disabled = false;
+            // Change button text on last question
+            const isLastQuestion = Questions.currentIndex >= Questions.currentQuestions.length - 1;
+            this.elements.nextQuestionBtn.textContent = isLastQuestion ? 'Finish Quiz' : 'Next Question';
         }
     },
 
