@@ -274,17 +274,22 @@ const UI = {
             this.elements.nextQuestionBtn.disabled = true;
         }
 
-        if (this.elements.answersContainer) {
-            const labels = question.type === 'yes_no'
-                ? ['Yes', 'No']
-                : ['A', 'B', 'C', 'D'];
-
+        // For yes/no questions, just show the text (no indicator needed)
+        // For multiple choice, show A/B/C/D indicators
+        if (question.type === 'yes_no') {
             this.elements.answersContainer.innerHTML = question.displayOptions.map((opt, i) => `
-                <button class="answer-btn" data-index="${i}">
-                    <span class="answer-indicator">${labels[i]}</span>
-                    <span class="answer-text">${opt}</span>
-                </button>
-            `).join('');
+                    <button class="answer-btn yes-no-btn" data-index="${i}">
+                        <span class="answer-text">${opt}</span>
+                    </button>
+                `).join('');
+        } else {
+            const labels = ['A', 'B', 'C', 'D'];
+            this.elements.answersContainer.innerHTML = question.displayOptions.map((opt, i) => `
+                    <button class="answer-btn" data-index="${i}">
+                        <span class="answer-indicator">${labels[i]}</span>
+                        <span class="answer-text">${opt}</span>
+                    </button>
+                `).join('');
         }
     },
 
