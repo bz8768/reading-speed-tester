@@ -368,6 +368,31 @@ const UI = {
             this.elements.statStreak.textContent = summary.streak || '0';
         }
 
+        // New enhanced stats
+        const statBestWPM = document.getElementById('stat-best-wpm');
+        const statTotalSessions = document.getElementById('stat-total-sessions');
+        const statTotalTime = document.getElementById('stat-total-time');
+        const statWeekSessions = document.getElementById('stat-week-sessions');
+
+        if (statBestWPM) {
+            statBestWPM.textContent = summary.bestWPM || '--';
+        }
+        if (statTotalSessions) {
+            statTotalSessions.textContent = summary.totalSessions || '0';
+        }
+        if (statTotalTime) {
+            statTotalTime.textContent = Stats.formatTime(summary.totalReadingTime || 0);
+        }
+        if (statWeekSessions) {
+            statWeekSessions.textContent = summary.sessionsThisWeek || '0';
+        }
+
+        // Question type breakdown
+        this.updateQuestionTypeBreakdown();
+
+        // Category performance
+        this.updateCategoryPerformance();
+
         if (this.elements.sessionHistory) {
             if (sessions.length === 0) {
                 this.elements.sessionHistory.innerHTML = `
@@ -394,6 +419,63 @@ const UI = {
 
         // Render simple charts if there are sessions
         this.renderCharts(sessions);
+    },
+
+    // Update question type breakdown display
+    updateQuestionTypeBreakdown() {
+        const accuracy = Stats.getQuestionTypeAccuracy();
+
+        const yesNoAccuracy = document.getElementById('yesno-accuracy');
+        const yesNoDetail = document.getElementById('yesno-detail');
+        const yesNoBar = document.getElementById('yesno-bar');
+        const mcAccuracy = document.getElementById('mc-accuracy');
+        const mcDetail = document.getElementById('mc-detail');
+        const mcBar = document.getElementById('mc-bar');
+
+        if (yesNoAccuracy) yesNoAccuracy.textContent = `${accuracy.yesNo.percentage}%`;
+        if (yesNoDetail) yesNoDetail.textContent = `${accuracy.yesNo.correct}/${accuracy.yesNo.total} correct`;
+        if (yesNoBar) yesNoBar.style.width = `${accuracy.yesNo.percentage}%`;
+
+        if (mcAccuracy) mcAccuracy.textContent = `${accuracy.multipleChoice.percentage}%`;
+        if (mcDetail) mcDetail.textContent = `${accuracy.multipleChoice.correct}/${accuracy.multipleChoice.total} correct`;
+        if (mcBar) mcBar.style.width = `${accuracy.multipleChoice.percentage}%`;
+    },
+
+    // Update category performance display
+    updateCategoryPerformance() {
+        const container = document.getElementById('category-performance');
+        if (!container) return;
+
+        const categories = Stats.getCategoryPerformance();
+
+        if (categories.length === 0) {
+            container.innerHTML = `
+                <div class="empty-state">
+                    <span class="empty-icon">📊</span>
+                    <p>Complete sessions to see category breakdown.</p>
+                </div>
+            `;
+            return;
+        }
+
+        container.innerHTML = categories.map(cat => `
+            <div class="category-card">
+                <div class="category-header">
+                    <span class="category-name">${cat.name}</span>
+                    <span class="category-sessions">${cat.sessions} session${cat.sessions !== 1 ? 's' : ''}</span>
+                </div>
+                <div class="category-stats">
+                    <div class="category-stat">
+                        <span class="category-stat-value">${cat.avgWPM}</span>
+                        <span class="category-stat-label">Avg WPM</span>
+                    </div>
+                    <div class="category-stat">
+                        <span class="category-stat-value">${cat.avgComprehension}%</span>
+                        <span class="category-stat-label">Accuracy</span>
+                    </div>
+                </div>
+            </div>
+        `).join('');
     },
 
     // Render simple line charts

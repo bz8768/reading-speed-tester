@@ -12,14 +12,29 @@ const App = {
     init() {
         console.log('SpeedReader initializing...');
 
+        // Initialize Settings (must be first to apply saved preferences)
+        Settings.init();
+
         // Initialize UI
         UI.init();
+
+        // Initialize Gen Z Mode
+        GenZMode.init();
+
+        // Initialize Stats Card
+        StatsCard.init();
 
         // Load initial data
         this.loadInitialData();
 
         // Setup event listeners
         this.setupEventListeners();
+
+        // Set font selector to current value
+        const fontSelect = document.getElementById('font-select');
+        if (fontSelect) {
+            fontSelect.value = Settings.getFont();
+        }
 
         // Show home view
         UI.showView('home');
@@ -189,6 +204,59 @@ const App = {
                 UI.showView('stats');
             });
         }
+
+        // Font selector
+        const fontSelect = document.getElementById('font-select');
+        if (fontSelect) {
+            fontSelect.addEventListener('change', (e) => {
+                Settings.setFont(e.target.value);
+            });
+        }
+
+        // Share stats button
+        const shareStatsBtn = document.getElementById('share-stats-btn');
+        if (shareStatsBtn) {
+            shareStatsBtn.addEventListener('click', () => {
+                const stats = Stats.getSummary();
+                StatsCard.showPreview(stats);
+            });
+        }
+
+        // Stats card modal controls
+        const closeStatsModal = document.getElementById('close-stats-modal');
+        const cancelStatsModal = document.getElementById('cancel-stats-modal');
+        const downloadStatsCard = document.getElementById('download-stats-card');
+
+        if (closeStatsModal) {
+            closeStatsModal.addEventListener('click', () => StatsCard.hidePreview());
+        }
+        if (cancelStatsModal) {
+            cancelStatsModal.addEventListener('click', () => StatsCard.hidePreview());
+        }
+        if (downloadStatsCard) {
+            downloadStatsCard.addEventListener('click', () => {
+                StatsCard.downloadCard();
+            });
+        }
+
+        // Gen Z Mode toggle
+        const genzToggle = document.getElementById('genz-toggle');
+        if (genzToggle) {
+            genzToggle.addEventListener('click', () => {
+                const isActive = GenZMode.toggle();
+                genzToggle.classList.toggle('active', isActive);
+                document.getElementById('genz-controls')?.classList.toggle('active', isActive);
+            });
+        }
+
+        // Gen Z intensity buttons
+        document.querySelectorAll('.genz-intensity-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.genz-intensity-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                GenZMode.setIntensity(btn.dataset.intensity);
+            });
+        });
 
         // Keyboard controls
         document.addEventListener('keydown', (e) => {

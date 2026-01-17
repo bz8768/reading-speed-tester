@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/genz-mode.css">
 </head>
 
 <body>
@@ -224,14 +226,40 @@
         <!-- Stats View -->
         <section class="view" id="view-stats">
             <div class="container">
-                <h1 class="page-title">Your Statistics</h1>
+                <div class="stats-header">
+                    <h1 class="page-title">Your Statistics</h1>
+                    <div class="stats-actions">
+                        <div class="font-selector">
+                            <label class="font-selector-label">Reading Font:</label>
+                            <select class="font-select" id="font-select">
+                                <option value="inter">Inter (Default)</option>
+                                <option value="lexend">Lexend (Fluency)</option>
+                                <option value="atkinson">Atkinson Hyperlegible</option>
+                                <option value="opendyslexic">OpenDyslexic</option>
+                                <option value="comic">Comic Neue</option>
+                                <option value="serif">Source Serif</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary" id="share-stats-btn">
+                            📤 Share Stats
+                        </button>
+                    </div>
+                </div>
 
+                <!-- Primary Stats Row -->
                 <div class="stats-overview">
                     <div class="stat-card stat-card-primary">
                         <span class="stat-card-icon">⚡</span>
                         <div class="stat-card-content">
                             <span class="stat-card-value" id="stat-avg-wpm">--</span>
                             <span class="stat-card-label">Average WPM</span>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-accent">
+                        <span class="stat-card-icon">🏆</span>
+                        <div class="stat-card-content">
+                            <span class="stat-card-value" id="stat-best-wpm">--</span>
+                            <span class="stat-card-label">Best WPM</span>
                         </div>
                     </div>
                     <div class="stat-card">
@@ -242,17 +270,42 @@
                         </div>
                     </div>
                     <div class="stat-card">
+                        <span class="stat-card-icon">🔥</span>
+                        <div class="stat-card-content">
+                            <span class="stat-card-value" id="stat-streak">--</span>
+                            <span class="stat-card-label">Day Streak</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Stats Row -->
+                <div class="stats-overview stats-secondary">
+                    <div class="stat-card stat-card-small">
                         <span class="stat-card-icon">📖</span>
                         <div class="stat-card-content">
                             <span class="stat-card-value" id="stat-total-words">--</span>
                             <span class="stat-card-label">Words Read</span>
                         </div>
                     </div>
-                    <div class="stat-card">
-                        <span class="stat-card-icon">🔥</span>
+                    <div class="stat-card stat-card-small">
+                        <span class="stat-card-icon">📚</span>
                         <div class="stat-card-content">
-                            <span class="stat-card-value" id="stat-streak">--</span>
-                            <span class="stat-card-label">Day Streak</span>
+                            <span class="stat-card-value" id="stat-total-sessions">--</span>
+                            <span class="stat-card-label">Total Sessions</span>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-small">
+                        <span class="stat-card-icon">⏱️</span>
+                        <div class="stat-card-content">
+                            <span class="stat-card-value" id="stat-total-time">--</span>
+                            <span class="stat-card-label">Reading Time</span>
+                        </div>
+                    </div>
+                    <div class="stat-card stat-card-small">
+                        <span class="stat-card-icon">📅</span>
+                        <div class="stat-card-content">
+                            <span class="stat-card-value" id="stat-week-sessions">--</span>
+                            <span class="stat-card-label">This Week</span>
                         </div>
                     </div>
                 </div>
@@ -272,6 +325,50 @@
                     </div>
                 </div>
 
+                <!-- Category Performance -->
+                <div class="section">
+                    <h2 class="section-title">Category Performance</h2>
+                    <div class="category-performance" id="category-performance">
+                        <div class="empty-state">
+                            <span class="empty-icon">📊</span>
+                            <p>Complete sessions to see category breakdown.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question Type Breakdown -->
+                <div class="section">
+                    <h2 class="section-title">Question Type Accuracy</h2>
+                    <div class="question-breakdown" id="question-breakdown">
+                        <div class="breakdown-card">
+                            <div class="breakdown-header">
+                                <span class="breakdown-icon">✓✗</span>
+                                <span class="breakdown-title">Yes/No Questions</span>
+                            </div>
+                            <div class="breakdown-stat">
+                                <span class="breakdown-value" id="yesno-accuracy">--%</span>
+                                <span class="breakdown-detail" id="yesno-detail">0/0 correct</span>
+                            </div>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-bar-fill" id="yesno-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="breakdown-card">
+                            <div class="breakdown-header">
+                                <span class="breakdown-icon">ABCD</span>
+                                <span class="breakdown-title">Multiple Choice</span>
+                            </div>
+                            <div class="breakdown-stat">
+                                <span class="breakdown-value" id="mc-accuracy">--%</span>
+                                <span class="breakdown-detail" id="mc-detail">0/0 correct</span>
+                            </div>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-bar-fill" id="mc-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="section">
                     <h2 class="section-title">Session History</h2>
                     <div class="history-list" id="session-history">
@@ -283,6 +380,29 @@
                 </div>
             </div>
         </section>
+
+        <!-- Stats Card Preview Modal -->
+        <div class="modal" id="stats-card-modal">
+            <div class="modal-overlay"></div>
+            <div class="modal-content modal-wide">
+                <div class="modal-header">
+                    <h2 class="modal-title">📤 Your Stats Card</h2>
+                    <button class="modal-close" id="close-stats-modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="stats-card-preview-container">
+                        <img id="stats-card-preview" alt="Stats Card Preview" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-ghost" id="cancel-stats-modal">Close</button>
+                    <button class="btn btn-primary" id="download-stats-card">
+                        💾 Download PNG
+                    </button>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Reading View (Hidden by default) -->
         <section class="view reading-view" id="view-reading">
@@ -347,6 +467,19 @@
                 <div class="mode-toggle">
                     <button class="mode-toggle-btn active" data-reader-mode="rsvp">RSVP</button>
                     <button class="mode-toggle-btn" data-reader-mode="scroll">Scroll</button>
+                </div>
+
+                <!-- Gen Z Focus Mode Controls -->
+                <div class="genz-controls" id="genz-controls">
+                    <button class="genz-toggle" id="genz-toggle">
+                        <span class="genz-toggle-icon">💀</span>
+                        <span class="genz-toggle-text">Gen Z Mode</span>
+                    </button>
+                    <div class="genz-intensity" id="genz-intensity">
+                        <button class="genz-intensity-btn active" data-intensity="low">Chill</button>
+                        <button class="genz-intensity-btn" data-intensity="medium">Mid</button>
+                        <button class="genz-intensity-btn" data-intensity="chaos">CHAOS</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -450,8 +583,11 @@
     <!-- Scripts -->
     <script src="data/passages.js"></script>
     <script src="js/stats.js"></script>
+    <script src="js/settings.js"></script>
     <script src="js/reader.js"></script>
     <script src="js/questions.js"></script>
+    <script src="js/genz-mode.js"></script>
+    <script src="js/stats-card.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/app.js"></script>
 </body>

@@ -1,0 +1,180 @@
+/* =========================================
+   Font Experiments - Reading-Friendly Fonts
+   ========================================= */
+
+/* Import specialized reading fonts */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Lexend:wght@300;400;500;600;700&family=Comic+Neue:wght@400;700&family=Source+Serif+4:wght@400;500;600&display=swap');
+
+/* OpenDyslexic - Self-hosted or CDN */
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* =========================================
+   Font Variables
+   ========================================= */
+
+:root {
+    /* Available reading fonts */
+    --font-reading-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-reading-lexend: 'Lexend', sans-serif;
+    --font-reading-atkinson: 'Atkinson Hyperlegible', sans-serif;
+    --font-reading-opendyslexic: 'OpenDyslexic', sans-serif;
+    --font-reading-comic: 'Comic Neue', cursive;
+    --font-reading-serif: 'Source Serif 4', Georgia, serif;
+
+    /* Current reading font (default) */
+    --font-reading: var(--font-reading-inter);
+
+    /* Font size adjustments (some fonts need different sizing) */
+    --font-reading-size-adjust: 1;
+}
+
+/* =========================================
+   Font Classes - Apply to reading views
+   ========================================= */
+
+/* Base reading font application */
+.reading-font {
+    font-family: var(--font-reading);
+    font-size: calc(1em * var(--font-reading-size-adjust));
+}
+
+/* Inter (Default) */
+body[data-font="inter"] {
+    --font-reading: var(--font-reading-inter);
+    --font-reading-size-adjust: 1;
+}
+
+/* Lexend - Designed for reading fluency */
+body[data-font="lexend"] {
+    --font-reading: var(--font-reading-lexend);
+    --font-reading-size-adjust: 0.95;
+}
+
+/* Atkinson Hyperlegible - Maximum clarity */
+body[data-font="atkinson"] {
+    --font-reading: var(--font-reading-atkinson);
+    --font-reading-size-adjust: 1.02;
+}
+
+/* OpenDyslexic - Dyslexia-friendly */
+body[data-font="opendyslexic"] {
+    --font-reading: var(--font-reading-opendyslexic);
+    --font-reading-size-adjust: 0.9;
+}
+
+/* Comic Neue - Friendly, approachable */
+body[data-font="comic"] {
+    --font-reading: var(--font-reading-comic);
+    --font-reading-size-adjust: 1.05;
+}
+
+/* Source Serif - Classic book feel */
+body[data-font="serif"] {
+    --font-reading: var(--font-reading-serif);
+    --font-reading-size-adjust: 1;
+}
+
+/* =========================================
+   Apply Font to Reading Elements
+   ========================================= */
+
+/* RSVP word display */
+.rsvp-word,
+.rsvp-display {
+    font-family: var(--font-reading);
+}
+
+/* Scroll mode text */
+.scroll-display,
+.scroll-display .word {
+    font-family: var(--font-reading);
+}
+
+/* Passage preview */
+.passage-preview-text {
+    font-family: var(--font-reading);
+}
+
+/* =========================================
+   Font Selector Styles
+   ========================================= */
+
+.font-selector {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.font-selector-label {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.font-select {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    min-width: 160px;
+}
+
+.font-select:hover {
+    border-color: var(--border-color-strong);
+    background: var(--bg-surface-hover);
+}
+
+.font-select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+.font-select option {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    padding: var(--space-2);
+}
+
+/* Font preview in option labels */
+.font-option-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-option-lexend {
+    font-family: 'Lexend', sans-serif;
+}
+
+.font-option-atkinson {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+.font-option-opendyslexic {
+    font-family: 'OpenDyslexic', sans-serif;
+}
+
+.font-option-comic {
+    font-family: 'Comic Neue', cursive;
+}
+
+.font-option-serif {
+    font-family: 'Source Serif 4', serif;
+}

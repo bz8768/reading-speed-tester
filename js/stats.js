@@ -104,14 +104,153 @@ const Stats = {
     // Get summary stats
     getSummary() {
         const stats = this.load();
+        const enhanced = this.getEnhancedStats();
         return {
             totalSessions: stats.sessions.length,
             totalWordsRead: stats.totalWordsRead,
             averageWPM: stats.averageWPM,
             averageComprehension: stats.averageComprehension,
             bestWPM: stats.bestWPM,
-            streak: stats.streak
+            streak: stats.streak,
+            // Enhanced stats
+            totalReadingTime: enhanced.totalReadingTime,
+            sessionsThisWeek: enhanced.sessionsThisWeek,
+            averageSessionLength: enhanced.averageSessionLength,
+            genZModeSessions: enhanced.genZModeSessions
         };
+    },
+
+    // Get enhanced statistics
+    getEnhancedStats() {
+        const stats = this.load();
+        const sessions = stats.sessions;
+        const now = new Date();
+        const weekAgo = new Date(now - 7 * 24 * 60 * 60 * 1000);
+
+        // Total reading time (sum of all session reading times)
+        const totalReadingTime = sessions.reduce((sum, s) => sum + (s.readingTime || 0), 0);
+
+        // Sessions this week
+        const sessionsThisWeek = sessions.filter(s => new Date(s.date) >= weekAgo).length;
+
+        // Average session length
+        const averageSessionLength = sessions.length > 0
+            ? Math.round(totalReadingTime / sessions.length)
+            : 0;
+
+        // Gen Z mode sessions (if tracked)
+        const genZModeSessions = sessions.filter(s => s.genZMode).length;
+
+        return {
+            totalReadingTime,
+            sessionsThisWeek,
+            averageSessionLength,
+            genZModeSessions
+        };
+    },
+
+    // Get category performance breakdown
+    getCategoryPerformance() {
+        const stats = this.load();
+        const sessions = stats.sessions;
+        const categories = {};
+
+        sessions.forEach(session => {
+            // Extract category from passageId (e.g., "sci_001" -> "science")
+            const categoryMap = {
+                'sci': 'Science',
+                'hist': 'History',
+                'tech': 'Technology',
+                'nat': 'Nature',
+                'lit': 'Literature',
+                'fic': 'Fiction'
+            };
+
+            const prefix = session.passageId?.split('_')[0];
+            const category = categoryMap[prefix] || 'Other';
+
+            if (!categories[category]) {
+                categories[category] = {
+                    sessions: 0,
+                    totalWPM: 0,
+                    totalComprehension: 0
+                };
+            }
+
+            categories[category].sessions++;
+            categories[category].totalWPM += session.wpm || 0;
+            categories[category].totalComprehension += session.comprehensionScore || 0;
+        });
+
+        // Calculate averages
+        return Object.entries(categories).map(([name, data]) => ({
+            name,
+            sessions: data.sessions,
+            avgWPM: Math.round(data.totalWPM / data.sessions),
+            avgComprehension: Math.round(data.totalComprehension / data.sessions)
+        })).sort((a, b) => b.sessions - a.sessions);
+    },
+
+    // Get question type accuracy (Yes/No vs Multiple Choice)
+    getQuestionTypeAccuracy() {
+        const stats = this.load();
+        const sessions = stats.sessions;
+
+        let yesNoCorrect = 0;
+        let yesNoTotal = 0;
+        let mcCorrect = 0;
+        let mcTotal = 0;
+
+        sessions.forEach(session => {
+            if (session.yesNoScore !== undefined) {
+                yesNoCorrect += session.yesNoScore;
+                yesNoTotal += session.yesNoTotal || 0;
+            }
+            if (session.mcScore !== undefined) {
+                mcCorrect += session.mcScore;
+                mcTotal += session.mcTotal || 0;
+            }
+        });
+
+        return {
+            yesNo: {
+                correct: yesNoCorrect,
+                total: yesNoTotal,
+                percentage: yesNoTotal > 0 ? Math.round((yesNoCorrect / yesNoTotal) * 100) : 0
+            },
+            multipleChoice: {
+                correct: mcCorrect,
+                total: mcTotal,
+                percentage: mcTotal > 0 ? Math.round((mcCorrect / mcTotal) * 100) : 0
+            }
+        };
+    },
+
+    // Get best time of day for reading
+    getHourlyPerformance() {
+        const stats = this.load();
+        const sessions = stats.sessions;
+        const hourlyData = {};
+
+        sessions.forEach(session => {
+            const hour = new Date(session.date).getHours();
+            const timeOfDay = hour < 12 ? 'Morning' : hour < 17 ? 'Afternoon' : 'Evening';
+
+            if (!hourlyData[timeOfDay]) {
+                hourlyData[timeOfDay] = { sessions: 0, totalWPM: 0, totalComp: 0 };
+            }
+
+            hourlyData[timeOfDay].sessions++;
+            hourlyData[timeOfDay].totalWPM += session.wpm || 0;
+            hourlyData[timeOfDay].totalComp += session.comprehensionScore || 0;
+        });
+
+        return Object.entries(hourlyData).map(([time, data]) => ({
+            time,
+            sessions: data.sessions,
+            avgWPM: Math.round(data.totalWPM / data.sessions),
+            avgComprehension: Math.round(data.totalComp / data.sessions)
+        }));
     },
 
     // Get recent sessions
