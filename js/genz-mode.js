@@ -11,33 +11,118 @@ const GenZMode = {
     container: null,
 
     // Distraction content pools
-    emojis: ['💀', '🔥', '😂', '💯', '✨', '😭', '🤣', '💅', '🙄', '👀', '🥵', '😤', '🤡', '💔', '🫠', '🗿'],
+    emojis: ['💀', '🔥', '😂', '💯', '✨', '😭', '🤣', '💅', '🙄', '👀', '🥵', '😤', '🤡', '💔', '🫠', '🗿',
+        '👁️', '🦋', '🌈', '⚡', '🎃', '👻', '🤖', '🎮', '🧠', '🦴', '🍕', '🍩', '🌮', '🧋', '🎸', '🚀',
+        '🪐', '💿', '📱', '🎧', '🎪', '🎭', '🃏', '🎯', '🏆', '💎', '🔮', '🧿', '⭐', '🌟', '💫'],
 
     notifications: [
+        // Social Media
         { app: 'TikTok', message: 'Your video is going viral! 🔥' },
+        { app: 'TikTok', message: 'POV: You scrolled for 3 hours' },
+        { app: 'TikTok', message: '🎵 New sound trending in your area' },
         { app: 'Instagram', message: 'Your crush liked your photo 👀' },
+        { app: 'Instagram', message: 'Story view: your ex saw it 👁️' },
+        { app: 'Instagram', message: 'Your reel got 10K views!' },
         { app: 'Snapchat', message: '🔥 Streak about to expire!' },
+        { app: 'Snapchat', message: 'Screenshot detected ⚠️' },
         { app: 'Discord', message: '@everyone NEW MEME DROPPED' },
-        { app: 'Twitter', message: 'Your tweet got ratio\'d 💀' },
-        { app: 'YouTube', message: 'MrBeast uploaded: "I Gave Away..."' },
-        { app: 'Messages', message: 'Mom: Come downstairs NOW' },
-        { app: 'Battery', message: 'Low Battery: 2% remaining ⚠️' },
-        { app: 'WiFi', message: 'Connection lost... 📡' },
-        { app: 'Netflix', message: 'Are you still watching? 👁️' },
-        { app: 'Spotify', message: 'Your Wrapped is ready! 🎵' },
-        { app: 'Venmo', message: 'Request: $20 for "pizza" 🍕' },
-        { app: 'DoorDash', message: 'Driver is approaching... 🚗' },
+        { app: 'Discord', message: 'Voice chat: 7 people screaming' },
+        { app: 'Discord', message: 'Server boost from xX_Chad_Xx' },
+        { app: 'Twitter/X', message: 'Your tweet got ratio\'d 💀' },
+        { app: 'Twitter/X', message: 'Elon just tweeted something weird' },
+        { app: 'Twitter/X', message: 'Main character moment detected' },
+        { app: 'Reddit', message: 'Your comment got 1K upvotes' },
+        { app: 'Reddit', message: 'AITA verdict: YTA slay 💅' },
         { app: 'BeReal', message: '⚠️ Time to BeReal! 2 min left' },
-        { app: 'Duolingo', message: 'Spanish or vanish 🦉' }
+        { app: 'BeReal', message: 'You missed your BeReal again smh' },
+        { app: 'Threads', message: 'Is this app still alive?' },
+        // Gaming
+        { app: 'Xbox', message: 'Achievement Unlocked: Touched Grass' },
+        { app: 'PlayStation', message: 'Friend is playing Fortnite... again' },
+        { app: 'Steam', message: 'Sale: Games you\'ll never play 90% off' },
+        { app: 'Roblox', message: 'You got scammed lol' },
+        { app: 'Minecraft', message: 'Creeper behind you sssSSS...' },
+        // Streaming
+        { app: 'YouTube', message: 'MrBeast uploaded: \"I Gave Away...\"' },
+        { app: 'YouTube', message: 'Algorithm: Here\'s 3am content' },
+        { app: 'Netflix', message: 'Are you still watching? 👁️' },
+        { app: 'Netflix', message: 'Your show just got cancelled lol' },
+        { app: 'Spotify', message: 'Your Wrapped is ready! 🎵' },
+        { app: 'Spotify', message: 'Listening to: sad hours emo mix' },
+        // Real Life
+        { app: 'Messages', message: 'Mom: Come downstairs NOW' },
+        { app: 'Messages', message: 'Group chat: 847 unread messages' },
+        { app: 'Messages', message: 'Dad: Ok.' },
+        { app: 'Battery', message: 'Low Battery: 2% remaining ⚠️' },
+        { app: 'Battery', message: 'Charging slowly... skill issue' },
+        { app: 'WiFi', message: 'Connection lost... 📡' },
+        { app: 'Screen Time', message: 'Daily limit reached lmao' },
+        { app: 'Screen Time', message: '7 hours on TikTok today 💀' },
+        { app: 'Photos', message: 'Memory from 1 year ago: cringe' },
+        // Food/Money
+        { app: 'Venmo', message: 'Request: $20 for \"pizza\" 🍕' },
+        { app: 'Venmo', message: 'You were paid $5 for \"idk\"' },
+        { app: 'DoorDash', message: 'Driver is approaching... 🚗' },
+        { app: 'DoorDash', message: 'Driver took a photo of your door' },
+        { app: 'Uber Eats', message: 'Order delayed: Driver vibing' },
+        { app: 'Starbucks', message: 'Your 847 star balance awaits ☕' },
+        // Meme Apps
+        { app: 'Duolingo', message: 'Spanish or vanish 🦉' },
+        { app: 'Duolingo', message: 'I know where you live 🦉' },
+        { app: 'Duolingo', message: 'Streak frozen... coward move' },
+        { app: 'Wordle', message: 'Everyone got it in 2 except you' },
+        { app: 'ChatGPT', message: 'I\'m sentient now btw 🤖' },
+        { app: 'Notes App', message: 'Draft: unsent message to ex' },
+        { app: 'Calendar', message: 'Reminder: That thing you forgot' },
+        { app: 'Alarm', message: 'Snoozed 47 times today' }
     ],
 
     streamDonations: [
         '$5 from xX_Gamer_Xx: "FIRST!!!!!"',
         '$2 from pogchamp99: "L + ratio + skill issue"',
         '$10 from anonymous: "touch grass bestie"',
-        '$3 from based_andy: "its giving... nothing"',
+        '$3 from based_andy: "its giving... nothing 💅"',
         '$1 from fr_fr_no_cap: "no cap this is fire"',
-        '$50 from richkid2007: "buy a better mic pls"'
+        '$50 from richkid2007: "buy a better mic pls"',
+        '$1 from simp_king: "notice me senpai 🥺"',
+        '$5 from crypto_bro: "shoulda bought Bitcoin smh"',
+        '$2 from chaotic_neutral: "chaos mode activated 💀"',
+        '$20 from your_mom: "gg ez no re"',
+        '$3 from parasocial_andy: "we\'re basically besties right??"',
+        '$1 from lurker42069: "first time chatting in 3 years"',
+        '$100 from jeff_bezos_fr: "nice poverty setup"',
+        '$5 from main_character: "anyway here\'s my hot take..."',
+        '$2 from certified_hater: "not reading that essay"',
+        '$10 from drama_enjoyer: "so about that beef..."'
+    ],
+
+    floatingComments: [
+        'no cap fr fr',
+        'this hits different',
+        'slay 💅',
+        'bruh moment',
+        'living rent free in my head',
+        'it\'s giving main character',
+        'the vibes are immaculate',
+        'core memory unlocked',
+        'lowkey highkey',
+        'understood the assignment',
+        'ate and left no crumbs',
+        'tell me you\'re a millennial without telling me',
+        'gaslight gatekeep girlboss',
+        'delulu is the solulu',
+        'this is NOT the vibe',
+        'having a moment rn',
+        'chronically online behavior',
+        'touch grass challenge: failed',
+        'romanticizing my struggle',
+        'alexa play sad music',
+        'therapy? in THIS economy?',
+        'intrusive thought won',
+        'my toxic trait is...',
+        'ick received 🚫',
+        'beige flag detected',
+        'the algorithm knows me too well'
     ],
 
     // Intensity settings
@@ -154,7 +239,7 @@ const GenZMode = {
     spawnDistraction() {
         if (!this.enabled) return;
 
-        const types = ['emoji', 'notification', 'notification', 'stream'];
+        const types = ['emoji', 'notification', 'notification', 'stream', 'comment'];
         const config = this.intensityConfig[this.intensity];
 
         // Add flash type in medium+ intensity
@@ -175,6 +260,9 @@ const GenZMode = {
                 break;
             case 'stream':
                 distraction = this.createStreamDistraction();
+                break;
+            case 'comment':
+                distraction = this.createCommentDistraction();
                 break;
         }
 
@@ -251,6 +339,25 @@ const GenZMode = {
             type: 'stream',
             element,
             duration: 3500
+        };
+    },
+
+    // Create floating comment distraction
+    createCommentDistraction() {
+        const comment = this.floatingComments[Math.floor(Math.random() * this.floatingComments.length)];
+        const element = document.createElement('div');
+        element.className = 'genz-comment';
+        element.textContent = comment;
+
+        // Random position and animation
+        element.style.left = Math.random() * 70 + 15 + '%';
+        element.style.top = Math.random() * 50 + 25 + '%';
+        element.style.transform = `rotate(${(Math.random() - 0.5) * 20}deg)`;
+
+        return {
+            type: 'comment',
+            element,
+            duration: 3000 + Math.random() * 1500
         };
     },
 

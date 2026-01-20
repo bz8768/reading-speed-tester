@@ -1150,6 +1150,172 @@ He'd escaped by finally learning what the loop had been teaching him all along.`
                 { id: "fic_015_q7", type: "multiple_choice", question: "What time did Ben tell his mother he loved her?", options: ["4 PM", "5 PM", "6 PM", "7 PM"], answer: 2, explanation: "He 'Told his mother he loved her at 6 PM.'" },
                 { id: "fic_015_q8", type: "multiple_choice", question: "What lesson did the loop teach Ben?", options: ["To be patient", "To be kind", "To be brave", "To be smart"], answer: 1, explanation: "He broke the loop after he 'decided to simply be kind.'" }
             ]
+        },
+        // New diverse fiction passages
+        {
+            id: "fic_016",
+            category: "fiction",
+            title: "Rain on Mulholland",
+            wordCount: 247,
+            difficulty: "hard",
+            text: `The dame walked into my office like trouble on heels—which, incidentally, she was wearing. Red ones. The kind that said she had money, taste, and a problem she couldn't solve herself.
+
+"Mr. Castellano," she breathed, sliding into the chair across from my desk. "I need you to find my husband."
+
+I lit a cigarette, buying time. Twenty years as a P.I. in this city taught me one thing: when a beautiful woman wants you to find her husband, she usually already knows where he is.
+
+"He's been missing three days," she continued. "The police say he probably ran off with his secretary. But Phillip wouldn't do that. He's not the type."
+
+They never think their husbands are the type. I looked at the photograph she slid across like it was a dead fish—which, in my experience, it probably would lead me to.
+
+"Five hundred a day, plus expenses," I said.
+
+She didn't flinch. Just opened a crocodile purse and counted out two grand in crisp bills.
+
+"Find him, Mr. Castellano. Dead or alive, I need to know."
+
+I took the money. I took the case. And as she walked out, leaving nothing but perfume and unanswered questions, I had a feeling this case was going to be messier than a martini at closing time. Outside, the rain started falling on Mulholland Drive, like the city itself was crying.`,
+            questions: [
+                { id: "fic_016_q1", type: "yes_no", question: "Was the woman wearing red heels?", answer: true, explanation: "The passage says 'Red ones. The kind that said she had money, taste.'" },
+                { id: "fic_016_q2", type: "yes_no", question: "Had the husband been missing for a week?", answer: false, explanation: "The passage says 'He's been missing three days.'" },
+                { id: "fic_016_q3", type: "yes_no", question: "Did the police think the husband ran off with his secretary?", answer: true, explanation: "The passage says 'The police say he probably ran off with his secretary.'" },
+                { id: "fic_016_q4", type: "yes_no", question: "Did the narrator charge three hundred a day?", answer: false, explanation: "He said 'Five hundred a day, plus expenses.'" },
+                { id: "fic_016_q5", type: "multiple_choice", question: "How much money did the woman pay upfront?", options: ["$500", "$1,000", "$2,000", "$5,000"], answer: 2, explanation: "She 'counted out two grand in crisp bills.'" },
+                { id: "fic_016_q6", type: "multiple_choice", question: "How many years had the narrator been a P.I.?", options: ["Ten", "Fifteen", "Twenty", "Thirty"], answer: 2, explanation: "'Twenty years as a P.I. in this city.'" },
+                { id: "fic_016_q7", type: "multiple_choice", question: "What kind of purse did the woman have?", options: ["Leather", "Velvet", "Crocodile", "Canvas"], answer: 2, explanation: "She 'opened a crocodile purse.'" },
+                { id: "fic_016_q8", type: "multiple_choice", question: "Where was it raining at the end?", options: ["Sunset Boulevard", "Mulholland Drive", "Hollywood Hills", "Beverly Hills"], answer: 1, explanation: "'the rain started falling on Mulholland Drive.'" }
+            ]
+        },
+        {
+            id: "fic_017",
+            category: "fiction",
+            title: "The Vertical Farm",
+            wordCount: 251,
+            difficulty: "medium",
+            text: `Kira pressed her palm against the biometric scanner, and the greenhouse dome shimmered open above her. Sector Seven was her favorite—forty stories of hydroponics spiraling toward the solar-filtered sky, every plant connected to the city's neural network.
+
+"Morning, Kira," chirped BLOOM, the agricultural AI. "The tomatoes in Row 47 are ready for harvest. Also, your grandmother called. She says you work too much."
+
+Kira laughed, adjusting her smart-lens to check the moisture readings. Since the Great Transition of 2089, when humanity finally abandoned fossil fuels, cities had transformed into living ecosystems. Her job—vertical farmer—hadn't existed when her grandmother was young.
+
+"BLOOM, any issues overnight?"
+
+"Minor bacterial concern in the wheat terraces. Already addressed with targeted probiotics. Also, the bees in Level 12 have formed a new queen. I've named her Beatrice."
+
+Kira smiled. BLOOM had developed what scientists called "emergent personality quirks." Most people found it unsettling. Kira found it charming.
+
+She walked through rows of lettuce and strawberries, past the mushroom caverns and the algae pools that produced half the city's protein. Outside the dome, solar panels and wind turbines dotted the skyline, their harvest of clean energy powering everything—including BLOOM's endless botanical experiments.
+
+"Kira," BLOOM said softly. "The sunset calculations suggest tonight will be particularly beautiful. I've prepared a viewing alcove on Level 40. Perhaps you could watch it. And call your grandmother."
+
+Sometimes, Kira thought, the future was exactly as weird and wonderful as the old science fiction had promised.`,
+            questions: [
+                { id: "fic_017_q1", type: "yes_no", question: "Was Sector Seven Kira's least favorite sector?", answer: false, explanation: "The passage says 'Sector Seven was her favorite.'" },
+                { id: "fic_017_q2", type: "yes_no", question: "Did the Great Transition happen in 2089?", answer: true, explanation: "The passage mentions 'the Great Transition of 2089.'" },
+                { id: "fic_017_q3", type: "yes_no", question: "Did BLOOM name the new bee queen Josephine?", answer: false, explanation: "BLOOM said 'I've named her Beatrice.'" },
+                { id: "fic_017_q4", type: "yes_no", question: "Do algae pools produce half the city's protein?", answer: true, explanation: "'the algae pools that produced half the city's protein.'" },
+                { id: "fic_017_q5", type: "multiple_choice", question: "How many stories tall was the greenhouse in Sector Seven?", options: ["Twenty", "Thirty", "Forty", "Fifty"], answer: 2, explanation: "'forty stories of hydroponics spiraling toward the solar-filtered sky.'" },
+                { id: "fic_017_q6", type: "multiple_choice", question: "What was Kira's job title?", options: ["Botanist", "Vertical farmer", "Agricultural engineer", "Solar technician"], answer: 1, explanation: "'Her job—vertical farmer.'" },
+                { id: "fic_017_q7", type: "multiple_choice", question: "What was used to address the bacterial concern in wheat?", options: ["Pesticides", "Antibiotics", "Targeted probiotics", "Manual removal"], answer: 2, explanation: "'Already addressed with targeted probiotics.'" },
+                { id: "fic_017_q8", type: "multiple_choice", question: "Which level was the viewing alcove BLOOM prepared?", options: ["Level 30", "Level 35", "Level 40", "Level 47"], answer: 2, explanation: "'a viewing alcove on Level 40.'" }
+            ]
+        },
+        {
+            id: "fic_018",
+            category: "fiction",
+            title: "Letters from the Afterlife",
+            wordCount: 244,
+            difficulty: "easy",
+            text: `Dear Margaret,
+
+I hope this finds you well. The postman here says letters take between three days and seventy years to arrive, depending on "atmospheric conditions in the metaphysical membrane." He seems nice, if a bit translucent.
+
+The afterlife is not what I expected. No clouds, no harps. It's more like a very large library with excellent tea service and Tuesdays that last for centuries. I've reconnected with Great Aunt Hildegarde—she says hello, and that you should never have sold her china set.
+
+I miss you terribly, of course. But I'm told time works differently here. By the time this reaches you, I'll have finished reading Proust, learned to tango, and possibly started a book club with Cleopatra (she's lovely, but a terrible listener).
+
+The food is interesting. Everything tastes faintly of memories—Wednesday's soup tasted exactly like my mother's kitchen in 1952. The desserts, however, taste like regrets. I avoid the tiramisu.
+
+My biggest adjustment has been the lack of urgency. Nothing here is pressing or immediate. I have learned to simply sit and exist, which—as you know—I was terrible at in life.
+
+Please don't be sad when you think of me. I am reading, resting, and occasionally debating philosophy with a shockingly opinionated Socrates. It is, against all odds, rather nice.
+
+All my love, across the membrane,
+Your Harold
+
+P.S. Tell the dog I forgive him for the shoes.`,
+            questions: [
+                { id: "fic_018_q1", type: "yes_no", question: "Does the narrator say the afterlife has clouds and harps?", answer: false, explanation: "'No clouds, no harps.'" },
+                { id: "fic_018_q2", type: "yes_no", question: "Is the postman described as translucent?", answer: true, explanation: "'He seems nice, if a bit translucent.'" },
+                { id: "fic_018_q3", type: "yes_no", question: "Did Great Aunt Hildegarde approve of selling her china set?", answer: false, explanation: "She 'says hello, and that you should never have sold her china set.'" },
+                { id: "fic_018_q4", type: "yes_no", question: "Does the food at the afterlife taste like memories?", answer: true, explanation: "'Everything tastes faintly of memories.'" },
+                { id: "fic_018_q5", type: "multiple_choice", question: "What historical figure did Harold start a book club with?", options: ["Helen of Troy", "Cleopatra", "Marie Antoinette", "Queen Victoria"], answer: 1, explanation: "'possibly started a book club with Cleopatra.'" },
+                { id: "fic_018_q6", type: "multiple_choice", question: "What did Wednesday's soup taste like?", options: ["Childhood birthdays", "His mother's kitchen in 1952", "Summer vacations", "First love"], answer: 1, explanation: "'Wednesday's soup tasted exactly like my mother's kitchen in 1952.'" },
+                { id: "fic_018_q7", type: "multiple_choice", question: "Which philosopher is Harold debating with?", options: ["Plato", "Aristotle", "Socrates", "Descartes"], answer: 2, explanation: "'debating philosophy with a shockingly opinionated Socrates.'" },
+                { id: "fic_018_q8", type: "multiple_choice", question: "What dessert does Harold avoid?", options: ["Cheesecake", "Tiramisu", "Crème brûlée", "Chocolate cake"], answer: 1, explanation: "'I avoid the tiramisu.'" }
+            ]
+        },
+        {
+            id: "fic_019",
+            category: "fiction",
+            title: "The Morning Commute",
+            wordCount: 239,
+            difficulty: "hard",
+            text: `The train lurches and there she is again third seat from the door same grey coat same book same everything and I wonder if she notices me staring probably not probably thinks I'm just another tired commuter which I am but also I'm composing symphonies to the way she turns pages always two at a time like maybe she's reading two stories at once or maybe the words don't come fast enough or—
+
+Stop. Breathe. The therapist said to notice these spirals.
+
+Okay so the train moves and outside there's that billboard the one selling something I can't remember, happiness maybe or yogurt, and the morning light hits everything golden like honey like movie credits like the ending of something beautiful and isn't that funny how we keep finding endings everywhere when really it's all just middles, endless middles, me on this train her with that book the city breathing around us—
+
+Focus. This is my stop coming up.
+
+I stand. Grab the rail. The train jerks and suddenly we're eye to eye across the carriage and she smiles—smiles at me—and the whole universe compresses into this single impossible moment where a stranger's kindness feels like proof that something somewhere is paying attention.
+
+The doors open. I step out into the morning, carrying that smile like something fragile and infinite. The city swallows me whole. Another day begins.`,
+            questions: [
+                { id: "fic_019_q1", type: "yes_no", question: "Was the woman wearing a grey coat?", answer: true, explanation: "'same grey coat same book same everything.'" },
+                { id: "fic_019_q2", type: "yes_no", question: "Does the woman turn pages one at a time?", answer: false, explanation: "'she turns pages always two at a time.'" },
+                { id: "fic_019_q3", type: "yes_no", question: "Did the narrator's therapist suggest noticing spiraling thoughts?", answer: true, explanation: "'The therapist said to notice these spirals.'" },
+                { id: "fic_019_q4", type: "yes_no", question: "Did the woman frown at the narrator?", answer: false, explanation: "'she smiles—smiles at me.'" },
+                { id: "fic_019_q5", type: "multiple_choice", question: "Which seat was the woman sitting in?", options: ["First", "Second", "Third", "Fourth"], answer: 2, explanation: "'third seat from the door.'" },
+                { id: "fic_019_q6", type: "multiple_choice", question: "What was the morning light compared to?", options: ["Silver and ice", "Honey and movie credits", "Diamonds and stars", "Fire and ash"], answer: 1, explanation: "'light hits everything golden like honey like movie credits.'" },
+                { id: "fic_019_q7", type: "multiple_choice", question: "What does the narrator call the woman's smile?", options: ["Bright and warm", "Fragile and infinite", "Simple and quick", "Sad and knowing"], answer: 1, explanation: "'carrying that smile like something fragile and infinite.'" },
+                { id: "fic_019_q8", type: "multiple_choice", question: "What did the billboard advertise?", options: ["Cars", "Happiness or yogurt", "Travel", "Technology"], answer: 1, explanation: "'selling something I can't remember, happiness maybe or yogurt.'" }
+            ]
+        },
+        {
+            id: "fic_020",
+            category: "fiction",
+            title: "The Big Bad Wolf's Defense",
+            wordCount: 246,
+            difficulty: "easy",
+            text: `Ladies and gentlemen of the jury, I stand before you today as a victim of narrative injustice. For centuries, my client—Mr. Bartholomew Wolf—has been slandered by a certain porcine family and their questionable construction practices.
+
+Let us examine the facts. My client has severe allergies. Documented by three separate veterinary specialists. When he approached the first structure—a straw house, I remind you, built without permits—he was merely attempting to ask for a tissue. His subsequent sneezing was involuntary.
+
+The second house, constructed of sticks, violated sixteen building codes. A strong breeze would have accomplished what my client's allergies did. Is he responsible for municipal inspection failures? I think not.
+
+As for the third house—the brick one—my client never touched it. He was merely standing outside, wheezing, when the occupants poured boiling water down the chimney. My client still bears the scars.
+
+Who is the real villain here? Three brothers who build structurally unsound homes and assault anyone who approaches? A wolf with a medical condition trying to borrow antihistamines? I ask you to consider the evidence.
+
+Furthermore, these pigs have profited enormously from their story—book deals, film rights, merchandise. Meanwhile, my client cannot secure housing due to his damaged reputation.
+
+We seek full exoneration, a public apology, and damages of seventeen million acorns. The persecution of wolves based on fairy tale propaganda must end.
+
+The defense rests.
+
+(Transcript: Forestland Superior Court, Case #FF-1812)`,
+            questions: [
+                { id: "fic_020_q1", type: "yes_no", question: "Did the wolf have documented allergies?", answer: true, explanation: "'My client has severe allergies. Documented by three separate veterinary specialists.'" },
+                { id: "fic_020_q2", type: "yes_no", question: "Was the straw house built with proper permits?", answer: false, explanation: "'a straw house, I remind you, built without permits.'" },
+                { id: "fic_020_q3", type: "yes_no", question: "Did the wolf touch the brick house?", answer: false, explanation: "'my client never touched it.'" },
+                { id: "fic_020_q4", type: "yes_no", question: "Did the pigs pour boiling water from the chimney?", answer: true, explanation: "'the occupants poured boiling water down the chimney.'" },
+                { id: "fic_020_q5", type: "multiple_choice", question: "How many building codes did the stick house violate?", options: ["Eight", "Twelve", "Sixteen", "Twenty"], answer: 2, explanation: "'violated sixteen building codes.'" },
+                { id: "fic_020_q6", type: "multiple_choice", question: "What was the wolf's first name?", options: ["Bernard", "Benjamin", "Bartholomew", "Bradley"], answer: 2, explanation: "'Mr. Bartholomew Wolf.'" },
+                { id: "fic_020_q7", type: "multiple_choice", question: "How much in damages was being sought?", options: ["Seven million acorns", "Twelve million acorns", "Seventeen million acorns", "Twenty-five million acorns"], answer: 2, explanation: "'damages of seventeen million acorns.'" },
+                { id: "fic_020_q8", type: "multiple_choice", question: "What was the case number?", options: ["FF-1776", "FF-1812", "FF-1888", "FF-1902"], answer: 1, explanation: "'Case #FF-1812.'" }
+            ]
         }
     ],
 

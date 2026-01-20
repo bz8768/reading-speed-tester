@@ -7,6 +7,7 @@
     <meta name="description"
         content="Test and improve your reading speed with comprehension tracking. RSVP and scrolling reading modes with detailed statistics.">
     <title>Reading Speed Tester | Improve Your Reading</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -414,6 +415,20 @@
                     <span class="reading-title" id="current-passage-title">--</span>
                     <span class="reading-progress" id="reading-progress">0%</span>
                 </div>
+
+                <!-- Gen Z Focus Mode Controls - Now in header -->
+                <div class="genz-header-controls" id="genz-controls">
+                    <button class="genz-header-toggle" id="genz-toggle" title="Gen Z Focus Mode">
+                        <span class="genz-toggle-icon">💀</span>
+                        <span class="genz-toggle-label">Gen Z</span>
+                    </button>
+                    <div class="genz-header-intensity" id="genz-intensity">
+                        <button class="genz-int-btn active" data-intensity="low" title="Chill">😌</button>
+                        <button class="genz-int-btn" data-intensity="medium" title="Mid">😬</button>
+                        <button class="genz-int-btn" data-intensity="chaos" title="CHAOS">🤯</button>
+                    </div>
+                </div>
+
                 <div class="reading-stats">
                     <span class="reading-stat">
                         <span id="current-wpm">300</span> WPM
@@ -467,19 +482,6 @@
                 <div class="mode-toggle">
                     <button class="mode-toggle-btn active" data-reader-mode="rsvp">RSVP</button>
                     <button class="mode-toggle-btn" data-reader-mode="scroll">Scroll</button>
-                </div>
-
-                <!-- Gen Z Focus Mode Controls -->
-                <div class="genz-controls" id="genz-controls">
-                    <button class="genz-toggle" id="genz-toggle">
-                        <span class="genz-toggle-icon">💀</span>
-                        <span class="genz-toggle-text">Gen Z Mode</span>
-                    </button>
-                    <div class="genz-intensity" id="genz-intensity">
-                        <button class="genz-intensity-btn active" data-intensity="low">Chill</button>
-                        <button class="genz-intensity-btn" data-intensity="medium">Mid</button>
-                        <button class="genz-intensity-btn" data-intensity="chaos">CHAOS</button>
-                    </div>
                 </div>
             </div>
         </section>

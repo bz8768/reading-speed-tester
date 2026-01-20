@@ -249,10 +249,10 @@ const App = {
             });
         }
 
-        // Gen Z intensity buttons
-        document.querySelectorAll('.genz-intensity-btn').forEach(btn => {
+        // Gen Z intensity buttons (supports both old and new classes)
+        document.querySelectorAll('.genz-intensity-btn, .genz-int-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                document.querySelectorAll('.genz-intensity-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.genz-intensity-btn, .genz-int-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 GenZMode.setIntensity(btn.dataset.intensity);
             });
