@@ -1316,6 +1316,184 @@ The defense rests.
                 { id: "fic_020_q7", type: "multiple_choice", question: "How much in damages was being sought?", options: ["Seven million acorns", "Twelve million acorns", "Seventeen million acorns", "Twenty-five million acorns"], answer: 2, explanation: "'damages of seventeen million acorns.'" },
                 { id: "fic_020_q8", type: "multiple_choice", question: "What was the case number?", options: ["FF-1776", "FF-1812", "FF-1888", "FF-1902"], answer: 1, explanation: "'Case #FF-1812.'" }
             ]
+        },
+        {
+            id: "fic_021",
+            category: "fiction",
+            title: "The Cloud Shepherd",
+            wordCount: 265,
+            difficulty: "medium",
+            text: `Elias was not a shepherd of sheep, but of clouds. High atop the Peaks of Whispers, where the air was thin and tasted of frost, he played his silver flute. The music wasn't for human ears; it was a language of wind and pressure, guiding the fluffy cumulus and wispy cirrus across the azure sky.
+
+Most people in the valley below thought the weather was random. They didn't know that Elias pushed the rain clouds toward the thirsty farms in the east or steered the dangerous thunderstorms away from the village. It was a lonely life, but a necessary one.
+
+One afternoon, a Storm Drake appeared on the horizon—a jagged mass of purple thunderheads shaped like a dragon, crackling with green lightning. It defied the wind, moving against the natural currents, hungry for the destruction of the valley.
+
+Elias raised his flute. He didn't play the gentle lullabies of fair weather. He played a battle march, a piercing shriek of high notes that summoned the northern gales. The winds rallied to his call, slamming into the Storm Drake with the force of a hurricane.
+
+For hours they battled, music against thunder. Elias played until his fingers bled and his lungs burned. Finally, with a dissipating groan of thunder, the Drake broke apart, scattering into harmless gray mist.
+
+ exhausted, Elias collapsed on the moss. Below, the villagers came out to marvel at the sudden sunshine, never knowing that a boy with a flute had just saved their world.`,
+            questions: [
+                { id: "fic_021_q1", type: "yes_no", question: "Did Elias herd sheep?", answer: false, explanation: "The passage states 'Elias was not a shepherd of sheep, but of clouds.'" },
+                { id: "fic_021_q2", type: "yes_no", question: "Did Elias utilize a silver flute?", answer: true, explanation: "The passage mentions 'he played his silver flute.'" },
+                { id: "fic_021_q3", type: "yes_no", question: "Did the villagers know Elias was controlling the weather?", answer: false, explanation: "The passage says 'Most people... thought the weather was random' and 'never knowing that a boy with a flute had just saved their world.'" },
+                { id: "fic_021_q4", type: "yes_no", question: "Did the Storm Drake move with the natural wind currents?", answer: false, explanation: "It moved 'against the natural currents.'" },
+                { id: "fic_021_q5", type: "multiple_choice", question: "Where did Elias live?", options: ["In the valley", "Atop the Peaks of Whispers", "In a cave", "On a cloud"], answer: 1, explanation: "He was 'High atop the Peaks of Whispers.'" },
+                { id: "fic_021_q6", type: "multiple_choice", question: "What color was the lightning in the Storm Drake?", options: ["Yellow", "White", "Blue", "Green"], answer: 3, explanation: "It was 'crackling with green lightning.'" },
+                { id: "fic_021_q7", type: "multiple_choice", question: "What did Elias summon to fight the Drake?", options: ["Rain", "The northern gales", "Other dragons", "The sun"], answer: 1, explanation: "He 'summoned the northern gales.'" },
+                { id: "fic_021_q8", type: "multiple_choice", question: "How did the battle end?", options: ["The Drake ate Elias", "The Drake broke apart into mist", "Elias retreated", "The flute broke"], answer: 1, explanation: "The Drake 'broke apart, scattering into harmless gray mist.'" }
+            ]
+        },
+        {
+            id: "fic_022",
+            category: "fiction",
+            title: "The Shadow Trader",
+            wordCount: 258,
+            difficulty: "hard",
+            text: `In the narrowest alley of the city, hidden behind a door painted with midnight tar, lived the Shadow Trader. People came to him not for gold or jewels, but for pieces of themselves they wished to discard.
+
+"What can I do for you?" the Trader asked, his own shadow detaching itself from the wall to pour tea.
+
+A young man sat nervously in the velvet chair. "I want to be brave. Like a lion."
+
+The Trader nodded. "I have a lion's shadow in stock. Taken from a king who grew tired of war. But the trade must be equal. To gain bravery, you must give up your caution."
+
+"Take it," the man said quickly.
+
+The Trader produced a pair of scissors made of silver light. snip, snip. The man's shadow fell away, looking small and trembling. The Trader replaced it with a sprawling, dark shape that roared silently on the floorboards.
+
+The man stood up, his chest puffing out. He strode out the door without checking for traffic, without looking back.
+
+"He'll be dead in a week," the Trader's shadow whispered.
+
+"Perhaps," the Trader replied, pinning the trembling shadow to his display board. "But he will die brave. That is what he bought."
+
+He looked at his collection—shadows of dancers who wanted to be scholars, scholars who wanted to be lovers, lovers who wanted to forget. All of them trading parts of their souls for something they thought they needed, never realizing that the shadow always remembers what was lost.`,
+            questions: [
+                { id: "fic_022_q1", type: "yes_no", question: "Was the door painted with white paint?", answer: false, explanation: "The door was 'painted with midnight tar.'" },
+                { id: "fic_022_q2", type: "yes_no", question: "Did the Trader's shadow pour tea?", answer: true, explanation: "The passage says 'his own shadow detaching itself from the wall to pour tea.'" },
+                { id: "fic_022_q3", type: "yes_no", question: "Did the young man check for traffic when leaving?", answer: false, explanation: "He left 'without checking for traffic.'" },
+                { id: "fic_022_q4", type: "yes_no", question: "Did the man trade his caution for bravery?", answer: true, explanation: "The Trader said 'To gain bravery, you must give up your caution.'" },
+                { id: "fic_022_q5", type: "multiple_choice", question: "What were the scissors made of?", options: ["Steel", "Gold", "Silver light", "Shadow"], answer: 2, explanation: "He produced 'scissors made of silver light.'" },
+                { id: "fic_022_q6", type: "multiple_choice", question: "Where did the lion's shadow come from?", options: ["A zoo", "A king who grew tired of war", "A hunter", "The jungle"], answer: 1, explanation: "It was 'Taken from a king who grew tired of war.'" },
+                { id: "fic_022_q7", type: "multiple_choice", question: "How long did the shadow predict the man would live?", options: ["A day", "A week", "A year", "Decades"], answer: 1, explanation: "'He'll be dead in a week.'" },
+                { id: "fic_022_q8", type: "multiple_choice", question: "What does the shadow always remember?", options: ["The price", "The future", "What was lost", "The owner's name"], answer: 2, explanation: "The passage ends with 'the shadow always remembers what was lost.'" }
+            ]
+        },
+        {
+            id: "fic_023",
+            category: "fiction",
+            title: "The Clockwork Heart",
+            wordCount: 271,
+            difficulty: "medium",
+            text: `The tick-tock of the workshop was more comforting to Silas than the beat of his own heart. He adjusted his magnifying monocle, carefully placing a gear the size of a grain of sand into the brass chamber.
+
+"Is it ready, Papa?" asked a weak voice from the cot in the corner.
+
+Elara was fading. Her skin was pale as porcelain, her breathing shallow. The doctors had said her heart was too tired to go on. Silas, the greatest clockmaker in the empire, refused to accept that.
+
+"Almost, my star," he whispered.
+
+The mechanism was a masterpiece of gold, brass, and ruby bearings. It could pump blood, yes, but a heart was more than a pump. It needed a spark. It needed life.
+
+Silas took a deep breath. He picked up the transfer conduit—a helmet of copper wires connected to the clockwork heart. He placed it on his own head.
+
+He thought of Elara's first laugh. *click*. A gear spun.
+He thought of teaching her to walk. *whir*. The pistons fired.
+He thought of the day her mother died, and the promise he made to protect her. *thump-thump*.
+
+The machine began to beat, a steady, rhythmic pulse. But Silas felt colder, dimmer. He was pouring his own vitality, his own memories, into the springs.
+
+He staggered to the cot and initiated the surgery. As he connected the final valve, his vision blurred. He watched the color return to Elara's cheeks as the clockwork heart took over.
+
+"Papa?" she asked, sitting up, stronger than she had been in months.
+
+Silas smiled, slumping against his workbench. "I'm just... resting comfortably," he lied, as his own internal spring slowly wound down.`,
+            questions: [
+                { id: "fic_023_q1", type: "yes_no", question: "Was Silas a doctor?", answer: false, explanation: "Silas was 'the greatest clockmaker in the empire.'" },
+                { id: "fic_023_q2", type: "yes_no", question: "Did the mechanism utilize ruby bearings?", answer: true, explanation: "It was a 'masterpiece of gold, brass, and ruby bearings.'" },
+                { id: "fic_023_q3", type: "yes_no", question: "Did Silas transfer his own memories to the heart?", answer: true, explanation: "He was 'pouring his own vitality, his own memories, into the springs.'" },
+                { id: "fic_023_q4", type: "yes_no", question: "Did Elara die at the end?", answer: false, explanation: "She sat up 'stronger than she had been in months.'" },
+                { id: "fic_023_q5", type: "multiple_choice", question: "What was the size of the gear Silas placed?", options: ["A coin", "A pea", "A grain of sand", "A walnut"], answer: 2, explanation: "He placed 'a gear the size of a grain of sand.'" },
+                { id: "fic_023_q6", type: "multiple_choice", question: "What material was the transfer helmet made of?", options: ["Steel", "Copper", "Iron", "Silver"], answer: 1, explanation: "A 'helmet of copper wires.'" },
+                { id: "fic_023_q7", type: "multiple_choice", question: "What happened when Silas thought of Elara's first laugh?", options: ["The machine exploded", "Nothing happened", "A gear spun", "The lights flickered"], answer: 2, explanation: "'He thought of Elara's first laugh. click. A gear spun.'" },
+                { id: "fic_023_q8", type: "multiple_choice", question: "Why did Silas slump against the workbench?", options: ["He was sleepy", "He tripped", "His own life force was draining", "He was drunk"], answer: 2, explanation: "He was 'pouring his own vitality... as his own internal spring slowly wound down.'" }
+            ]
+        },
+        {
+            id: "fic_024",
+            category: "fiction",
+            title: "The Star Catcher",
+            wordCount: 236,
+            difficulty: "easy",
+            text: `Most people made wishes on falling stars. Elara caught them.
+
+With a net woven from moonlight and spider silk, she waited on the highest roof in the village. When a streak of white fire painted the dark sky, she would leap, swinging her net in a wide arc.
+
+*Sizzle.*
+
+The star would land in her net, cooling rapidly from blinding white to a soft, pulsing warmth. Up close, they looked like rough diamonds, humming with a low vibration.
+
+Elara didn't keep them. Stars weren't meant for jars. She caught them because they were broken.
+
+She would take the fallen star to her workbench and examine it with a jeweler's loupe. "Ah, there's the crack," she'd murmur. "You hit a satellite on the way down, didn't you?"
+
+Using a tiny silver hammer and glue made of stardust, she would repair the celestial bodies. She polished their facets until they shined again.
+
+Then came the hard part. She had to climb the Mountain of Echoes, past the cloud layer, to the very edge of the atmosphere. With a mighty throw, she would hurl the repaired star back into the heavens.
+
+It would hang there for a moment, uncertain, before flaring to life and rushing back to its constellation.
+
+The villagers mocked her. "You can't fix the sky," they said.
+
+But Elara knew better. Every night, the sky was a little brighter than before. And sometimes, when the wind was right, the stars twinkled in a pattern that looked remarkably like a "Thank You."`,
+            questions: [
+                { id: "fic_024_q1", type: "yes_no", question: "Did Elara keep the stars in jars?", answer: false, explanation: "The passage states 'Elara didn't keep them. Stars weren't meant for jars.'" },
+                { id: "fic_024_q2", type: "yes_no", question: "Was Elara's net made of nylon?", answer: false, explanation: "It was 'woven from moonlight and spider silk.'" },
+                { id: "fic_024_q3", type: "yes_no", question: "Did Elara repair the stars?", answer: true, explanation: "She would 'repair the celestial bodies' using a silver hammer and stardust glue." },
+                { id: "fic_024_q4", type: "yes_no", question: "Did the villagers support Elara's work?", answer: false, explanation: "The passage says 'The villagers mocked her.'" },
+                { id: "fic_024_q5", type: "multiple_choice", question: "What did the stars look like up close?", options: ["Burning rocks", "Rough diamonds", "Glass balls", "Fireflies"], answer: 1, explanation: "They looked like 'rough diamonds, humming with a low vibration.'" },
+                { id: "fic_024_q6", type: "multiple_choice", question: "What did Elara use to fix the stars?", options: ["Tape", "Welding torch", "Silver hammer and stardust glue", "Magic wand"], answer: 2, explanation: "Using 'a tiny silver hammer and glue made of stardust.'" },
+                { id: "fic_024_q7", type: "multiple_choice", question: "Where did she go to release the stars?", options: ["The ocean", "Her roof", "The Mountain of Echoes", "A rocket ship"], answer: 2, explanation: "She had to 'climb the Mountain of Echoes.'" },
+                { id: "fic_024_q8", type: "multiple_choice", question: "What did the stars do after being thrown back?", options: ["Fell again", "Disappeared", "Returned to their constellation", "Exploded"], answer: 2, explanation: "It would rush 'back to its constellation.'" }
+            ]
+        },
+        {
+            id: "fic_025",
+            category: "fiction",
+            title: "The Book of Tomorrow",
+            wordCount: 253,
+            difficulty: "medium",
+            text: `The book had no title, only a cover of worn blue leather. When Julian opened it, the pages were blank. But as he watched, ink began to bleed into existence, forming words in a handwriting that looked suspiciously like his own.
+
+"Julian sat in the library," the book read, "wondering why it was raining outside when the forecast had promised sun."
+
+Julian looked up. Outside the window, a sudden downpour began to lash against the glass.
+
+He looked back at the book. New words were forming. "He decided to leave early, taking the shortcut through the park. There, he would find a gold coin, but he would also ruin his best shoes in a puddle."
+
+Julian frowned. He liked his shoes. He took a pen from his pocket and hovered it over the page. Just below the fading text, he wrote: "Instead, Julian decided to wait out the rain in the café across the street, where he ordered a hot chocolate."
+
+The ink shimmered. The words about the park and the puddle vanished, reorganized by his edit.
+
+Julian packed up and walked to the café. He ordered a hot chocolate. As he sipped it, the book in his bag grew warm. He pulled it out.
+
+"In the café," it now read, "Julian met Sarah, who would change his life."
+
+ The cafe door opened. A girl with a red umbrella walked in, shaking off the rain. She looked around for a table, and her eyes met his.
+
+Julian smiled, closed the book, and put his pen away. Some stories, he decided, were better written together.`,
+            questions: [
+                { id: "fic_025_q1", type: "yes_no", question: "Was the cover of the book red?", answer: false, explanation: "It had 'a cover of worn blue leather.'" },
+                { id: "fic_025_q2", type: "yes_no", question: "Did the book predict the rain?", answer: true, explanation: "The book read 'wondering why it was raining' just before it started." },
+                { id: "fic_025_q3", type: "yes_no", question: "Did Julian go to the park as the book originally predicted?", answer: false, explanation: "He wrote a new path: 'Julian decided to wait out the rain in the café.'" },
+                { id: "fic_025_q4", type: "yes_no", question: "Did text vanish when Julian wrote in the book?", answer: true, explanation: "The words 'vanished, reorganized by his edit.'" },
+                { id: "fic_025_q5", type: "multiple_choice", question: "What was Julian predicted to find in the park?", options: ["A wallet", "A gold coin", "A dog", "A key"], answer: 1, explanation: "The book said 'he would find a gold coin.'" },
+                { id: "fic_025_q6", type: "multiple_choice", question: "What did Julian order at the café?", options: ["Coffee", "Tea", "Hot chocolate", "Soup"], answer: 2, explanation: "He 'ordered a hot chocolate.'" },
+                { id: "fic_025_q7", type: "multiple_choice", question: "Who walked into the café?", options: ["His mother", "Sarah", "A police officer", "His boss"], answer: 1, explanation: "The book predicted he would meet 'Sarah,' and a girl entered." },
+                { id: "fic_025_q8", type: "multiple_choice", question: "Why did Julian put his pen away at the end?", options: ["It ran out of ink", "He was scared", "He wanted to write the story with Sarah", "He lost the book"], answer: 2, explanation: "He decided 'Some stories... were better written together.'" }
+            ]
         }
     ],
 
